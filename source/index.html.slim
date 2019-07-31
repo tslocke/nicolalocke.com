@@ -1,5 +1,5 @@
 ---
-title: Kaldi - Middleman + Netlify CMS Example
+title: Nicola Locke Life Coach
 ---
 
 section.hero style=background_image(image_path(data.pages.home.hero.image))
@@ -15,20 +15,18 @@ section.homepage-story
 
 section.homepage-products.products
   .container
-    h2
-      | Products
+    h2 Services
     .row
-      //product is structured: ['filename', 'data']
-      //sort by newest product
-      - data.products.sort {|a,b| b[1].date <=> a[1].date}.first(3).each do | product |
+      //service is structured: ['filename', 'data']
+      //sort by newest service
+      - data.services.sort {|a,b| b[1].date <=> a[1].date}.first(3).each do | service |
 
         //to get the actual data:
-        = partial 'partials/products/product', locals: {product: product[1]}
+        = partial 'partials/services/service', locals: {service: service[1]}
 
 section.homepage-news.news
   .container
-    h2
-      | News
+    h2 News
     .news-items
       //get the first two most recent posts
       - blog.articles.first(2).each do | article |

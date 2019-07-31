@@ -1,0 +1,8 @@
+//link to service by converting the title to a slug
+.service
+  = link_to '/service/' + service.title.parameterize + '/'
+    .service-image
+      = image_tag service.image
+    .service-content
+      .title
+        h3 = service.title

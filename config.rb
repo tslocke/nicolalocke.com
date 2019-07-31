@@ -37,12 +37,12 @@ end
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
 
-# proxy product.yml files to product.html 
-data.products.each do |_filename, product|
-  # product is an array: [filename, {data}]
-  proxy "/product/#{product[:title].parameterize}/index.html", "product.html", 
-  locals: {product: product}, 
-  layout: 'product-detail',
+# proxy service.yml files to service.html 
+data.services.each do |_filename, service|
+  # service is an array: [filename, {data}]
+  proxy "/service/#{service[:title].parameterize}/index.html", "service.html", 
+  locals: {service: service}, 
+  layout: 'service-detail',
   ignore: true
 end
 
