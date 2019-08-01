@@ -15,4 +15,8 @@
   font-family: 'Raleway', sans-serif;
 }
 
+.content p {
+  margin: 1rem 0;
+}
+
 .bg-section { background: #d0f5d7; }
