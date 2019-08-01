@@ -3,7 +3,9 @@ html
   head
     = partial 'layouts/meta'
     
-    = stylesheet_link_tag "all"
+    link href="https://fonts.googleapis.com/css?family=Crimson+Pro:200i|Raleway:400,800&display=swap" rel="stylesheet"
+    = stylesheet_link_tag "tailwind"
+    = stylesheet_link_tag "style"
 
     // Include netlify identity widget for user registration
     script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript" 
@@ -12,6 +14,6 @@ html
 
     main.main-content
       = yield
-    = partial 'partials/shared/footer'
+    / = partial 'partials/shared/footer'
 
     = javascript_include_tag 'main', async: true

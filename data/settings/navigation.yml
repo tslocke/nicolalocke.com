@@ -1,4 +1,8 @@
 nav_items: 
   - {label: 'Home', path: '/'}
-  - {label: 'News', path: '/news'}
+  - {label: 'Group Workshops', path: '/workshops'}
+  - {label: 'One to One', path: '/one-to-one'}
+  - {label: 'Year 6 to Year 7', path: '/six-to-seven'}
+  - {label: 'About Me', path: '/about'}
+  - {label: 'Contact', path: '/contact'}
 

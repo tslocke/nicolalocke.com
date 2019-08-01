@@ -2,32 +2,34 @@
 title: Nicola Locke Life Coach
 ---
 
-section.hero style=background_image(image_path(data.pages.home.hero.image))
-  .caption
-    .row
-      h1 = data.pages.home.hero.title
+section.bg-cover.relative style="#{background_image(image_path(data.pages.home.hero.image))}; height: 41rem"
+  .absolute.inset-x-0.bottom-0.bg-alpha-black-600.py-2.text-center.text-white
+    h1.uppercase.raleway.tracking-widest.leading-none.font-bold style="font-size: 3rem" Life Coaching
+    h2.crimson.text-3xl.italic.font-thin.leading-none for Teenage Girls
+    img.rounded-full.h-20.w-20.mx-auto.mt-2 src=image_path(data.settings.general.nicola_image)
+    h2.text-xl.raleway with Nicola Locke
 
-section.homepage-story
-  .container
-    .row
-      .story-content
-        = markdown data.pages.home.story
+/ section.homepage-story
+/   .container
+/     .row
+/       .story-content
+/         = markdown data.pages.home.story
 
-section.homepage-products.products
-  .container
-    h2 Services
-    .row
-      //service is structured: ['filename', 'data']
-      //sort by newest service
-      - data.services.sort {|a,b| b[1].date <=> a[1].date}.first(3).each do | service |
+/ section.mt-6
+/   .container
+/     h2 Services
+/     .row
+/       //service is structured: ['filename', 'data']
+/       //sort by newest service
+/       - data.services.sort {|a,b| b[1].date <=> a[1].date}.first(3).each do | service |
 
-        //to get the actual data:
-        = partial 'partials/services/service', locals: {service: service[1]}
+/         //to get the actual data:
+/         = partial 'partials/services/service', locals: {service: service[1]}
 
-section.homepage-news.news
-  .container
-    h2 News
-    .news-items
-      //get the first two most recent posts
-      - blog.articles.first(2).each do | article |
-        = partial 'partials/news/news_item', locals: {article: article}
+/ section.homepage-news.news
+/   .container
+/     h2 News
+/     .news-items
+/       //get the first two most recent posts
+/       - blog.articles.first(2).each do | article |
+/         = partial 'partials/news/news_item', locals: {article: article}
