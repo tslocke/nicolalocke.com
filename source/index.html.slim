@@ -15,7 +15,7 @@ section.my-20
     .text-center.content class="w-1/2"
       = markdown data.pages.home.feature
 
-section.flex.px-20.pb-10.bg-indigo-100
+section.flex.px-20.pb-10.bg-section
   - data.services.sort {|a,b| b[1].date <=> a[1].date}.first(3).each do | service |
     = partial 'partials/services/service', locals: {service: service[1]}
 
