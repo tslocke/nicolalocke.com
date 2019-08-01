@@ -8,7 +8,7 @@ public_folder: /images/uploads
 
 collections:
   - name: service
-    label: Service
+    label: Services
     format: yml
     extension: yml
     folder: data/services/
