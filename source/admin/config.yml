@@ -54,6 +54,46 @@ collections:
             name: feature
             widget: markdown
 
+      - file: "data/pages/workshops.yml"
+        label: Group Workshops
+        name: workshops
+        fields:
+          - label: Body
+            name: body
+            widget: markdown
+
+      - file: "data/pages/one-to-one.yml"
+        label: One to One
+        name: one-to-one
+        fields:
+          - label: Body
+            name: body
+            widget: markdown
+
+      - file: "data/pages/six-to-seven.yml"
+        label: Year 6 to 7
+        name: six-to-seven
+        fields:
+          - label: Body
+            name: body
+            widget: markdown
+
+      - file: "data/pages/about.yml"
+        label: About Me
+        name: about
+        fields:
+          - label: Body
+            name: body
+            widget: markdown
+
+      - file: "data/pages/contact.yml"
+        label: Contact
+        name: contact
+        fields:
+          - label: Body
+            name: body
+            widget: markdown
+
   - name: settings
     label: Settings
     files:

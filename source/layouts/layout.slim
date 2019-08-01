@@ -12,8 +12,8 @@ html
   body
     = partial 'partials/shared/header-primary'
 
-    main.pb-20
-      = yield
+    = yield
+    
     / = partial 'partials/shared/footer'
 
     = javascript_include_tag 'main', async: true

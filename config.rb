@@ -46,6 +46,14 @@ data.services.each do |_filename, service|
   ignore: true
 end
 
+data.pages.each do |_filename, page|
+  # page is an array: [filename, {data}]
+  proxy "/page/#{page[:slug]}/index.html", "page.html", 
+  locals: {page: page}, 
+  layout: 'container',
+  ignore: true
+end
+
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/

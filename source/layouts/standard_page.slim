@@ -1,0 +1,6 @@
+= wrap_layout :container
+  h1.font-bold.text-4xl = current_page.data.title
+
+  = yield
+
+  = current_page.data.keys
