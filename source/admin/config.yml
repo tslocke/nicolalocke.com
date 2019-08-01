@@ -47,8 +47,11 @@ collections:
             fields:
               - {label: Title, name: title, widget: string}
               - {label: Image, name: image, widget: image}
-          - label: Story
-            name: story
+          - label: Video
+            name: video
+            widget: string
+          - label: Feature
+            name: feature
             widget: markdown
 
   - name: settings
@@ -64,3 +67,8 @@ collections:
             fields:
               - {label: Label, name: label, widget: string}
               - {label: Path, name: path, widget: string}
+      - file: data/settings/general.yml
+        label: General
+        name: general
+        fields:
+          - {label: Face, name: face, widget: image}

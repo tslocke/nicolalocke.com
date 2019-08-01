@@ -1,8 +1,12 @@
 hero:
   image: /images/uploads/girls-sitting-on-road.jpg
   title: Life Coaching
-story: >-
-  Kaldi is the coffee store for everyone who believes that great coffee
-  shouldn't just taste good, it should do good too. We source all of our beans
-  directly from small scale sustainable farmers and make sure part of the
-  profits are reinvested in their communities.
+video: <iframe width="560" height="315" src="https://www.youtube.com/embed/tez33t1WhCA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+feature: |
+  # Spring 2019 Life-skills Workshop
+
+  ### 11-16 yrs
+  
+  Our 8-week workshop programme completed in June and was a great success. Don't take my word for it,
+  listen to what the girls had to say!
+
