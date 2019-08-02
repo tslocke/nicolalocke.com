@@ -1,26 +1,6 @@
-footer
-  = partial 'partials/shared/header-primary'
-
-    nav.navigation
-      ul
-        - data.settings.navigation.nav_items.each do | nav_item |
-          li
-            = nav_link nav_item.label, nav_item.path
+footer.flex.m-20.justify-around.pt-10.border-t
+  = image_tag "images/credentials/ACHP.jpg"
+  = image_tag "images/credentials/BSY.png"
+  = image_tag "images/credentials/CPD.jpg"
+  = image_tag "images/credentials/Rock-and-Water.jpg"
   
-  .footer-content
-    .container-fluid
-      .row
-        .newsletter
-          form
-            label for="email" Sign up for our newsletter
-            input type="email" name="email" placeholder="Your email address"
-            button type="submit" Submit
-
-        .social
-          .icons
-            = link_to '#'
-              = image_tag "social/facebook.svg"
-            = link_to '#'
-              = image_tag "social/twitter.svg"
-            = link_to 'https://github.com/tomrutgers/middleman-starter-netlify-cms'
-              = image_tag "social/github.svg"

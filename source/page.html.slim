@@ -1,10 +1,14 @@
 main.pt-16.flex
 
   div class="w-2/5 pr-10"
-    = image_tag page.image, class: "rounded-full"
+    = image_tag page.image, class: "rounded-full" if page.image
     
   div class="w-3/5"
 
     h1.font-bold.text-4xl = page.title
 
-    .content = markdown page.body if page.body
+    - if page.body
+      .content = markdown page.body
+    - else
+      .italic.mt-20.text-gray-500
+        ' (I am working on my new website - please check back soon!)
