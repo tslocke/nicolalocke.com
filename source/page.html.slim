@@ -2,6 +2,8 @@ main.pt-16.flex
 
   div class="w-2/5 pr-10"
     = image_tag page.image, class: "rounded-full" if page.image
+
+    .content.mt-20 = markdown page.sidebar
     
   div class="w-3/5"
 
