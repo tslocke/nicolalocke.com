@@ -1,11 +1,12 @@
-main.pt-16.flex
+main.pt-6 class="md:flex md:pt-16"
 
-  div class="w-2/5 pr-10"
-    = image_tag page.image, class: "rounded-full" if page.image
+  div.mx-10.max-w-sm.mb-10 class="md:w-2/5"
+    .mx-auto
+      = image_tag page.image, class: "rounded-full inline-block mx-auto" if page.image
 
-    .content.mt-20 = markdown page.sidebar
+    .content.mt-20.hidden class="md:block" = markdown page.sidebar
     
-  div class="w-3/5"
+  div.px-6 class="md:w-3/5 md:px-0"
 
     h1.font-bold.text-4xl = page.title
 

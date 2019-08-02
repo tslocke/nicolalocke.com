@@ -30,3 +30,13 @@
 }
 
 .bg-section { background: #d0f5d7; }
+
+@media (min-width: 1024px) {
+  .hero {
+    height: 41rem;
+  }
+}
+
+.hero {
+  height: 37rem;
+}
