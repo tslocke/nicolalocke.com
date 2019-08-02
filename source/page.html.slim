@@ -1,3 +1,10 @@
-h1.font-bold.text-4xl = page.title
+main.pt-16.flex
 
-.content = markdown page.body if page.body
+  div class="w-2/5 pr-10"
+    = image_tag page.image, class: "rounded-full"
+    
+  div class="w-3/5"
+
+    h1.font-bold.text-4xl = page.title
+
+    .content = markdown page.body if page.body

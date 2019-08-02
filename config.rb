@@ -37,15 +37,6 @@ end
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
 
-# proxy service.yml files to service.html 
-data.services.each do |_filename, service|
-  # service is an array: [filename, {data}]
-  proxy "/service/#{service[:title].parameterize}/index.html", "service.html", 
-  locals: {service: service}, 
-  layout: 'service-detail',
-  ignore: true
-end
-
 data.pages.each do |_filename, page|
   # page is an array: [filename, {data}]
   proxy "/page/#{page[:slug]}/index.html", "page.html", 
@@ -74,7 +65,7 @@ helpers do
   end
 
   def markdown(content)
-     Tilt['markdown'].new { content }.render
+    Tilt['markdown'].new(context: @app) { content }.render
   end
 end
 
