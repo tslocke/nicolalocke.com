@@ -1,13 +1,15 @@
+title: About Me
+slug: about
+image: /images/uploads/nicola-large.jpg
 body: >-
   # Hi there!
 
 
   ## My name is Nicola.
 
-
   A very warm welcome to my website
 
-
+  
   I am a creative and idealistic youth and child coach for teen girls.
 
 
@@ -54,16 +56,14 @@ body: >-
 
   * Run after-school arts and craft clubs.
 
-
-
-
   * Youth work continues In local youth clubs in Warwick.
-
-
-
 
   * I am certified in Child safeguarding.
 
   * I am enhanced DBS certified.
 
   * I am a certified first-aider
+
+sidebar: |
+
+  Read more about me in [the Leamington Courier](https://www.leamingtoncourier.co.uk/news/people/leamington-youth-counsellor-launching-workshops-to-help-young-girls-1-8905481)!

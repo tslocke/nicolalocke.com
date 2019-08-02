@@ -4,14 +4,14 @@ main.pt-6 class="md:flex md:pt-16"
     .mx-auto
       = image_tag page.image, class: "rounded-full inline-block mx-auto" if page.image
 
-    .content.mt-20.hidden class="md:block" = markdown page.sidebar
+    .content.mt-20.hidden class="md:block" = markdown page.sidebar if page.sidebar
     
   div.px-6 class="md:w-3/5 md:px-0"
 
     h1.font-bold.text-4xl = page.title
 
     - if page.body
-      .content = markdown page.body
+      .content.mb-20 = markdown page.body
     - else
       .italic.mt-20.text-gray-500
         ' (I am working on my new website - please check back soon!)

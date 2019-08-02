@@ -9,6 +9,13 @@
   font-family: 'Raleway', sans-serif;
 }
 
+.content h2 {
+  font-weight: bold;
+  margin: 0.6rem 0 0.4rem;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+}
+
 .content h3 {
   margin: -1rem 0 0.8rem;
   font-size: 1.2rem;
@@ -22,6 +29,10 @@
 .content ul {
   margin-left: 2rem;
   list-style-type: disc;
+}
+
+.content li {
+  margin: 0.3rem 0;
 }
 
 .content a {
