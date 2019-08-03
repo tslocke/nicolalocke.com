@@ -14,6 +14,6 @@ header
     div.w-full.hidden.flex-grow class="lg:flex-grow-0 lg:block lg:flex lg:items-center lg:w-auto lg:justify-center"
       di class="lg:flex-grow lg:justify-center"
         - data.settings.navigation.nav_items.each do | nav_item |
-          a.block.mt-4.mr-4 href=nav_item.path class="lg:inline-block lg:mt-0 lg:pl-4"
+          a.block.mt-4.mr-4.nav-button href=nav_item.path class="lg:inline-block lg:mt-0 lg:pl-4"
             = nav_item.label
         

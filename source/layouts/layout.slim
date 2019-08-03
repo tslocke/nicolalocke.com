@@ -9,7 +9,9 @@ html
 
     // Include netlify identity widget for user registration
     script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript" 
-  body
+
+    script src="https://js.stripe.com/v3"
+  body.flex.flex-col.min-h-screen
     = partial 'partials/shared/header-primary'
 
     = yield

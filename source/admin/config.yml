@@ -32,7 +32,8 @@ collections:
       - {label: Title, name: title, widget: string, required: true}
       - {label: Start, name: start, widget: date, required: true}
       - {label: End,   name: end, widget: date, required: true}
-      - {label: Time,  name: time, widget: string, required: true}
+      - {label: Details,  name: details, widget: string, required: true}
+      - {label: Strip SKU,  name: sku, widget: string, required: true}
       - {label: Price, name: price, widget: number, required: true}
       - {label: Description, name: description, widget: markdown, required: true}
 
@@ -73,6 +74,7 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Slug, name: slug, widget: string}
           - {label: Image, name: image, widget: image, required: false}
+          - {label: Intro, name: intro, widget: markdown}
           - {label: Body, name: body, widget: markdown}
           - {label: Sidebar, name: sidebar, widget: markdown, required: false}
 

@@ -67,6 +67,10 @@ helpers do
   def markdown(content)
     Tilt['markdown'].new(context: @app) { content }.render
   end
+
+  def date(datetime)
+    datetime.strftime("#{datetime.day.ordinalize} %b")
+  end
 end
 
 # Build-specific configuration

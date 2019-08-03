@@ -5,6 +5,6 @@ navigation = document.querySelector('.navigation')
 nav_button.addEventListener 'click', (->
 
   # open navigation and change toggle button
-  navigation.classList.toggle 'open'
+  # navigation.classList.toggle 'open'
   nav_button.classList.toggle 'active'
 ), false
