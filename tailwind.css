@@ -2,6 +2,11 @@
 
 @tailwind components;
 
+.button {
+  font-family: 'Raleway', sans-serif;
+  @apply bg-green-500 rounded-full text-white py-1 px-6;
+}
+
 @tailwind utilities;
 
 

@@ -627,6 +627,17 @@ video {
   }
 }
 
+.button {
+  font-family: 'Raleway', sans-serif;
+  background-color: #48bb78;
+  border-radius: 9999px;
+  color: #fff;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -36874,3 +36885,5 @@ video {
     z-index: auto;
   }
 }
+
+

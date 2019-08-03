@@ -9,12 +9,15 @@ section.bg-cover.bg-center.relative.hero style="#{background_image(image_path(da
     img.rounded-full.h-20.w-20.mx-auto.mt-2 src=image_path(data.settings.general.face)
     h2.text-xl.raleway with Nicola Locke
 
-section.my-20
+section.mt-20
   .flex.flex-col.items-center
     div.w-full class='md:w-2/3 lg:w-1/2'
       = data.pages.home.video
     .text-center.content.px-6 class="md:w-2/3 lg:w-1/2 md:px-0"
       = markdown data.pages.home.feature
+
+.flex.justify-center.mb-10
+  a.button.mx-auto href="/page/workshops" Register for the next workshops!
 
 section.py-20.bg-section class='lg:flex lg:px-20'
   - data.services.sort {|a,b| b[1].date <=> a[1].date}.first(3).each do | service |

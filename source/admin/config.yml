@@ -21,6 +21,19 @@ collections:
       - {label: Body, name: body, widget: markdown}
       - {label: Link, name: link, widget: string}
 
+  - name: workshop
+    label: Workshop
+    format: yml
+    extension: yml
+    folder: data/workshops/
+    create: true
+    slug: slug
+    fields: 
+      - {label: Title, name: title, widget: string, required: true}
+      - {label: Start, name: start, widget: date, required: true}
+      - {label: End,   name: end, widget: date, required: true}
+      - {label: Description, name: description, widget: markdown, required: true}
+
   - name: blog
     label: Blog
     folder: source/posts/
