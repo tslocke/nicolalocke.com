@@ -27,7 +27,7 @@ collections:
     extension: yml
     folder: data/workshops/
     create: true
-    slug: slug
+    slug: '{{title}}'
     fields: 
       - {label: Title, name: title, widget: string, required: true}
       - {label: Start, name: start, widget: date, required: true}
