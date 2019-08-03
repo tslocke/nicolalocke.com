@@ -6,7 +6,7 @@ main.pt-6 class="md:flex md:pt-16"
     .mx-auto
       = image_tag page.image, class: "rounded-full inline-block mx-auto" if page.image
 
-    .content.mt-20.hidden class="md:block" = markdown page.sidebar if page.sidebar
+    .content.mt-20.hidden.text-sm class="md:block" = markdown page.sidebar if page.sidebar
     
   div.px-6 class="md:w-3/5 md:px-0"
     
@@ -16,20 +16,19 @@ main.pt-6 class="md:flex md:pt-16"
 
     h2.font-bold.text-xl Upcoming Workshops
 
-    .flex
+    .mt-6 class='md:flex'
+      - data.workshops.each do |(file, workshop)|
+        .p-4.text-center class='w-1/2'
+          h2.font-semibold.text-lg = workshop.title
+          .text-sm
+            ' #{date workshop.start}  to #{date workshop.end}
+          .my-1.text-gray-700.uppercase.text-sm
+            = workshop.details
 
-    - data.workshops.each do |(file, workshop)|
-      .p-4.text-center class='w-1/2'
-        h2.font-semibold.text-lg = workshop.title
-        .text-sm
-          ' #{date workshop.start}  to #{date workshop.end}
-        .my-1.text-gray-700.uppercase.text-sm
-          = workshop.details
-
-        .my-10
-          button.button.checkout-button data-sku=workshop.sku 
-            ' Book now ~ £#{workshop.price}
-          #error-message.text-red-400
+          .my-10
+            button.button.checkout-button data-sku=workshop.sku 
+              ' Book now ~ £#{workshop.price}
+            #error-message.text-red-400
 
     .main.content.mb-20.border-t.pt-4 = markdown page.body
 
