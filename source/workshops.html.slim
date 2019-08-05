@@ -1,12 +1,12 @@
 - page = data.pages.workshops
 
-main.pt-6 class="md:flex md:pt-16"
+main.pt-6.flex.flex-col class="md:flex-row md:pt-16"
 
-  div.mx-10.max-w-sm.mb-10 class="md:w-2/5"
+  div.mx-10.max-w-sm.mb-10.order-last class="md:w-2/5 md:order-first"
     .mx-auto
       = image_tag page.image, class: "rounded-full inline-block mx-auto" if page.image
 
-    .content.mt-20.hidden.text-sm class="md:block" = markdown page.sidebar if page.sidebar
+    .content.mt-20.text-sm = markdown page.sidebar if page.sidebar
     
   div.px-6 class="md:w-3/5 md:px-0"
     
@@ -18,12 +18,17 @@ main.pt-6 class="md:flex md:pt-16"
 
     .mt-6 class='md:flex'
       - data.workshops.each do |(file, workshop)|
-        .p-4.text-center class='w-1/2'
+        .p-4.text-center class='md:w-1/2'
           h2.font-semibold.text-lg = workshop.title
-          .text-sm
-            ' #{date workshop.start}  to #{date workshop.end}
+
           .my-1.text-gray-700.uppercase.text-sm
             = workshop.details
+
+          .text-sm
+            ' #{date workshop.start}  to #{date workshop.end}
+
+          .my-1.text-gray-700.text-sm
+            = workshop.description
 
           .my-10
             button.button.checkout-button data-sku=workshop.sku 
