@@ -17,7 +17,7 @@ section.mt-20
       = markdown data.pages.home.feature
 
 .flex.justify-center.mb-10
-  a.button.mx-auto href="/page/workshops" Register for the next workshops!
+  a.button.mx-auto href="/workshops" Register for the next workshops!
 
 section.py-20.bg-section class='lg:flex lg:px-20'
   - data.services.sort {|a,b| b[1].date <=> a[1].date}.first(3).each do | service |
