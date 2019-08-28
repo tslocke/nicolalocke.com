@@ -1,29 +1,39 @@
 ---
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2018-08-18T09:01+02:00
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
-image: /images/uploads/news_item-03.jpg
+title: Time to turn this vicious circle on its head.
+date: '2018-08-18T09:01+02:00'
+description: ' It is time for girls to come together and make this world a happier and thriving place.'
+image: /images/uploads/girls-sitting-on-road.jpg
 ---
+This year I ran a pilot project to help teen girls with issues embracing self-esteem, self-awareness and assertive self-development. We worked on difficulties around friendship, how to say no, and how to change the dynamic from negative to positive when faced with immense peer pressure. We looked at our thoughts and behaviours and worked with tools that would help shift awareness to help become more positive, supportive and constructive, not only towards ourselves but towards our peers and our families. 
 
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
 
-Blue Mountain Peak is the highest mountain in Jamaica and one of the highest peaks in the Caribbean at 7,402 ft. It is the home of Blue Mountain coffee and their famous tours. It is located on the border of the Portland and Saint Thomas parishes of Jamaica.
 
-## A little history
+The pilot was a great success, the girls enjoyed it so much and did not want it to end. They created a support group that they are using to this day. It was clear to me that this scheme should be open to all teen girls that are struggling with day to day obligations around anything from friendship peer pressure to confidence issues, stress, anxiety and much more. 
 
-The Blue Mountains are considered by many to be a hiker's and camper's paradise. The traditional Blue Mountain trek is a 7-mile hike to the peak and consists of a 3,000-foot increase in elevation. Jamaicans prefer to reach the peak at sunrise, thus the 3–4 hour hike is usually undertaken in darkness. Since the sky is usually very clear in the mornings, Cuba can be seen in the distance.
 
->Some of the plants found on the Blue Mountain cannot be found anywhere else in the world and they are often of a dwarfed sort.
 
-This is mainly due to the cold climate which inhibits growth. The small coffee farming communities of Claverty Cottage and Hagley Gap are located near the peak.
+One common theme that was identified during the workshops was the need to understand that each and every one of them can easily contribute to any given problem. That until they become self-aware of this, they may continue to make mistakes and also follow peer groups like sheep. Because of the lack of skills to turn a situation around for a better and more productive outcome. They are failing to live up to becoming healthy and confident girls that they should be.
 
-## What you need to know before trying
 
-Jamaican Blue Mountain Coffee or Jamaica Blue Mountain Coffee is a classification of coffee grown in the Blue Mountains of Jamaica. The best lots of Blue Mountain coffee are noted for their mild flavor and lack of bitterness. Over the past few decades, this coffee has developed a reputation that has made it one of the most expensive and sought-after coffees in the world. Over 80% of all Jamaican Blue Mountain Coffee is exported to Japan. In addition to its use for brewed coffee, the beans are the flavor base of Tia Maria coffee liqueur.
 
-Jamaican Blue Mountain Coffee is a globally protected certification mark, meaning only coffee certified by the Coffee Industry Board of Jamaica can be labeled as such. It comes from a recognized growing region in the Blue Mountain region of Jamaica, and its cultivation is monitored by the Coffee Industry Board of Jamaica.
+Young girls are falling deeper and deeper into problems that, on their own, they cant find solutions. I see time and time again. Often, they do not want to go along with the crowd, but, they do not have the skills or the courage to stand up for themselves. They are so afraid of being judged or dumped by their peers, they either play along with the game. Or, they keep quiet, not even talking or sharing these difficulties with their parents. 
 
-The Blue Mountains are generally located between Kingston to the south and Port Antonio to the north. Rising 7,402 ft, they are some of the highest mountains in the Caribbean. The climate of the region is cool and misty with high rainfall. The soil is rich, with excellent drainage. This combination of climate and soil is considered ideal for coffee.
 
+
+But, in doing so, they start to lose touch with their inner values and morals, leaving them feeling vulnerable and confused. This downward spiral can lead them very quickly on a journey of low self-interest, low self-worth, and when this carries on for an extended period, it can cause severe health dilemmas. Severe breakdown in trust issues. It can leave them feeling empty and unable to focus.
+
+
+
+I think we can agree that all girls want to be happy; they all want to be excepted, appreciated and respected. I believe that girls could and should be supporting each other on every level. They should be a network of encouragement that empowers, protects and creates a secure environment where problems and weaknesses can be supported and shared. Without judgment or ridicule. Just kindness sincerity and wholesome relationships. 
+
+
+
+Yet, in today's society, girls are becoming more and more bitchy, super competitive. Emotionally damaging and draining each other. Creating negative emotions that are filled with hurt and insecurities. This is consuming most if not all of their energy, making them sick and very unhappy. With the rise in mental health issues, it is clear that something needs to change.
+
+
+
+Girls need to understand that this is not what life intended. Things need to improve dramatically. We already have an epidemic of troubled girls that has bought a massive strain into every household. It has gone beyond learning and growing. It is Leaving girls extremely troubled, and parents feeling worried and distraught about the welfare of their daughters.
+
+
+
+It is through these workshops girls can discover how to undo this mess and strive for a happier and healthier way forward. Bringing change to a lifetime of unnecessary misery.
