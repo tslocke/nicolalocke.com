@@ -1,7 +1,9 @@
 ---
 title: xx
 date: 2019-08-28T17:01:31.911Z
-description: xx
+description: >-
+  It is time for girls to come together and make this world a happier and
+  thriving place.
 image: /images/uploads/girls-sitting-on-road.jpg
 ---
 This year I ran a pilot project to help teen girls with issues embracing self-esteem, self-awareness and assertive self-development. We worked on difficulties around friendship, how to say no, and how to change the dynamic from negative to positive when faced with immense peer pressure. We looked at our thoughts and behaviours and worked with tools that would help shift awareness to help become more positive, supportive and constructive, not only towards ourselves but towards our peers and our families. 
