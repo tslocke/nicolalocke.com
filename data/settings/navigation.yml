@@ -3,5 +3,6 @@ nav_items:
   - {label: 'One to One',       path: '/page/one-to-one'}
   - {label: 'Year 6 to Year 7', path: '/page/six-to-seven'}
   - {label: 'About Me',         path: '/page/about'}
+  - {label: 'Blog',             path: '/blog'}
   - {label: 'Contact',          path: '/page/contact'}
 

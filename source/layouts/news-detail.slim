@@ -1,16 +1,18 @@
 = wrap_layout :layout
-  .news-detail
-    .container
-      .row
-        .title
-          - date = Date.parse current_page.data.date.to_s
-          span.date = date.strftime("%d-%m-%Y")
-          h1 = current_page.data.title
+  main.pt-6 class="md:flex md:pt-16"
 
-      .row
-        .image
-          = image_tag current_page.data.image
+    div.mx-10.max-w-sm.mb-10 class="md:w-2/5"
+      .mx-auto
 
-      .row.content
-        = yield
+      
+    div.px-6 class="md:w-3/5 md:px-0"
+      .text-md.text-gray-600.mb-4 &laquo; Back to latest posts
+
+      - date = Date.parse current_page.data.date.to_s
+      .italic = date.strftime("%d-%m-%Y")
+      h1.text-xl.font-bold = current_page.data.title
+
+      = image_tag current_page.data.image
+
+      .content = yield
 

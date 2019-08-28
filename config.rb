@@ -26,7 +26,7 @@ page "/partials/*", layout: false
 page "/admin/*", layout: false
 
 activate :blog do |blog|
-  blog.permalink = "news/{year}/{title}.html"
+  blog.permalink = "posts/{year}/{title}.html"
   blog.sources = "posts/{title}.html"
   blog.layout = "news-detail"
 end
