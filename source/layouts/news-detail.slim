@@ -3,16 +3,16 @@
 
     div.mx-10.max-w-sm.mb-10 class="md:w-2/5"
       .mx-auto
-
       
     div.px-6 class="md:w-3/5 md:px-0"
-      .text-md.text-gray-600.mb-4 &laquo; Back to latest posts
+      a.text-md.text-gray-600.mb-4 href="/blog/" &laquo; Back to latest posts
 
       - date = Date.parse current_page.data.date.to_s
       .italic = date.strftime("%d-%m-%Y")
       h1.text-xl.font-bold = current_page.data.title
 
-      = image_tag current_page.data.image
+      .my-6 
+        = image_tag current_page.data.image
 
-      .content = yield
+      .content.mb-10 = yield
 
