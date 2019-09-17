@@ -1,5 +1,5 @@
 ---
-title: Time to turn this vicious cycle on its head.
+title: Time to turn this vicious circle on its head.
 date: 2019-08-28T17:05:27.755Z
 description: ' It is time for girls to come together and make this world a happier and thriving place.'
 image: /images/uploads/girls-sitting-on-road.jpg
