@@ -14,7 +14,7 @@ They all have their very own individual strengths and 'together' they can change
 
 If they take all the negative energy, they are squandering and turn it 190 degrees to be positive and supportive of each other, imagine what a world they could create. Imagine the rippling effect it can have.
 
-It is time for them to build bonds. Unbreakable bonds. They need to develop Connections that unite not only themselves to their friends but also to their families. It is time to start Looking at this from a different perspective and, make the changes to create a feeling where they wake up daily feeling alive.  
+It is time for them to build bonds. Unbreakable bonds. They need to develop Connections that unite not only themselves to their friends but also to their families. It is time to start Looking at this from a different perspective, and make the changes to create a feeling where they wake up daily, wanting to get out of bed.  
 
 School should be a place where they have a sence of security. So that they can get on with their work and feel the loving support of all their fellow sisters behind them. 
 
