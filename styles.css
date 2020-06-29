@@ -1,0 +1,22 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+.row {
+  @apply flex;
+  flex-direction: row;
+}
+
+.col {
+  @apply flex;
+  flex-direction: column;
+}
+
+@import "tailwindcss/utilities";
+
+.poiret  { font-family: 'Poiret One'; }
+.raleway { font-family: 'Raleway'; }
+
+h1 {
+  font-family: 'Poiret One';
+}
