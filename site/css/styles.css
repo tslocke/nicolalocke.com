@@ -629,6 +629,12 @@ video {
   flex-direction: column;
 }
 
+.centered-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
@@ -17896,6 +17902,23 @@ video {
 
 h1 {
   font-family: 'Poiret One';
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+p { margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 2.5rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
 }
 
 @media (min-width: 640px) {

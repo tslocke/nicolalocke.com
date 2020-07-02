@@ -1,4 +1,5 @@
 def page
+  $file = [$name. '.html']
   html
     head 
       link rel:stylesheet href="/css/styles.css"
@@ -7,9 +8,11 @@ def page
     body class=[raleway col w-full]
       div format=[max-w-6xl mx-auto px-10 col flex-grow w-full]
         !header format=[flex mt:8 mb:16]
-          a class. href='/'
-            h1 format=[text:4xl] : Nicola Locke
-            h2 class=[text-gray-600 text-lg] 'Mentor / Facilitator'
+          a class=[flex items-center] href='/'
+            !face < img class=[w-16 rounded-full mr-4 mt-2] src='images/nicola.jpg'
+            div
+              h1 format=[text:4xl] : Nicola Locke
+              h2 class=[text-gray-600 text-lg '-mt-2'] 'Mentor / Facilitator'
           div class=[flex ml-auto items-center space-x-5 text-xl] 
             a href='workshops.html'    : Workshops
             a href='one-to-one.html'   : One to One
@@ -24,18 +27,31 @@ def page
             img src='images/logos/CPD.jpg'
             img src='images/logos/Rock-and-Water.jpg'
 
+def sidebar-page < page
+  main =
+    columns class=[row space-x-16]
+      !sidebar < column class/[w='1/3'] ''
+      !main < column class/[flex:2 w='2/3'] ''
 
 def columns < div class=[row]
 
-def column < div class=[flex:1]
+def column < div class/[flex:1]
 
 def youtube < div
-  iframe allowfullscreen="" !style='' src="https://www.youtube.com/embed/8aFD7E8_VhQ?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
+  iframe allowfullscreen="" !style='width: 100%; height: 100%;' src="https://www.youtube.com/embed/8aFD7E8_VhQ?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
   !caption < div class=[text-lg text-gray-600 text-center my-4] content=?
 
-def quote < div class=[max-w-xl bg-gray-300 p-4 text-center border-l-4 border-blue-400 mx-auto]
-  div class=[italic text-lg] !content.
+def box-quote < div class=[max-w-xl p-4 text-center border-blue-400 mx-auto bg-gray-300 border-l-4]
+  div class=[italic text-lg space-y-4] !content.
   !by < div class=[mt-4 font-bold] ''
+  !extra < div ''
+
+def quote < div class=[max-w-xl p-4 text-center border-blue-400 mx-auto]
+  div class=[text-lg space-y-4]
+   : &ldquo;
+   !content.
+  !by < div class=[mt-4 font-bold] ''
+
 
 def card < a href='' class=[col items-center space-y-6]
   !img
@@ -45,172 +61,274 @@ def card < a href='' class=[col items-center space-y-6]
 
 def button-link < div class=[bg-gray-300 rounded px-6 py-2 inline-block] content=?
 
-site =
+def website
   $dir = 'site'
-  home-page =
-    $file = 'index.html'
-    page
-      main =
-        div class=[space-y-20 col items-center]  
-          columns
-            column
-              img src='/images/word-tree.png'
-            column class/[px-4 col items-center]
-              div class=[text-center my-10] 
-                h1 class=[text:4xl] : My Life My Happiness
-                h2 class=[text:2xl text-gray-600 uppercase] : Life Tools for Girls
+  content.
 
-              div class/[space-y-4 max-w-lg text-gray-700]
-                p : Providing girls with the tools they need for life. Helping them build confidence to cope in an environment that is desperately competitive and demanding.
-                p : Showing them how to stay true to themselves and not be swept into conforming to peer pressure and the demands of modern society.
+def grid < div class=['grid' grid=[!cols='2'] !gap:0]
 
-          youtube style='width: 610px; height: 300px'
+def row < div class=[row]
 
-          quote by='Izzy, age 13' : 
-            "The sessions have all been so eye-opening. I have really benefited and gained more self-awareness. They have fully engaged me every time. I think everyone needs this in their life."
+def mailchimp-signup :
+  <!-- Begin Mailchimp Signup Form -->
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>
+  <div id="mc_embed_signup">
+  <form action="https://nicolalocke.us20.list-manage.com/subscribe/post?u=a73098283f010bdb3607a495a&amp;id=1100b85393" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="padding: 0">
+      <div id="mc_embed_signup_scroll">
+    
+  <div class="mc-field-group">
+    <label for="mce-EMAIL">Email Address  
+  </label>
+    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" style="width: 250px;">
+  </div>
+    <div id="mce-responses" class="clear">
+      <div class="response" id="mce-error-response" style="display:none"></div>
+      <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a73098283f010bdb3607a495a_1100b85393" tabindex="-1" value=""></div>
+      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      </div>
+  </form>
+  </div>
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+  <!--End mc_embed_signup-->
 
-          columns class/[max-w-3xl mx-auto space-x-20]
-            column
-              card img/src='/images/summer-tree.png' heading='Workshops'
-                : For girls aged 11 to 14, these could be just what she needs to rebuild her self-confidence while learning some simple but powerful, coping tools.
-                button: Learn More
+def mailto < a href=[!email=''] !email.
 
-            column
-              card img/src='/images/spring-tree.png' heading='One to One'
-                : Working with girls 10 yrs and up. These sessions are more flexible and provide a safe and secure space to talk and share their personal difficulties.
-                button: Learn More
+website
 
-  workshops-page =
-    $file = 'workshops.html'
-    page
-      main =
-        columns class/[space-x-16]
-          column class/[space-y-10 text-sm]
-            img src='images/summer-tree.png'
+  index < page
+    main/
+      class=[space-y:20 centered-column]
+      columns
+        column class/[px-4 col]
+          img src='/images/word-tree.png'
+          
+        column class/[px-4 col justify-around text-center]
+          div 
+            h1 class=[text:4xl] : My Life My Happiness
+            h2 class=[text:2xl text-gray-600 uppercase] : Life Tools for Girls
 
-            h2 class=[font-bold text-center text-xl]: Parent Testimonials
+          box-quote class/[w-full] by='Katy Biggs (Mum)'
+            extra =
+              a class=[block text-sm text-blue-500 mt-2] href='testimonials.html' : Read more testimonials
+            : I cannot recommend this lady enough. How she has helped Mollie is amazing!! Nicola has given Mollie so many tools to help in the future when things get tough. Couldn’t ask for more!
+          
+          section class/[space-y-4 text-gray-700 text-center]
+            p : Group workshops and one-to-one mentoring with a focus on creativity and fun, giving girls the tools they need to stay true to themselves and the strength to use them.
 
-            div class=[space-y-4]
-              p : I can’t tell you how much my daughter has enjoyed Nicola’s workshops.
+      youtube class=[w-full max-w-xl h-64]
 
-              p : She is a very shy child that finds social situations very difficult, so when I say that she didn’t miss one session and she was ready every Saturday waiting to go, it tells me a lot, it says she enjoyed being there and over the weeks she has learnt so much about herself. Nicola made her feel at ease and able to join in.
+      row class/[max-w-3xl mx-auto space-x-20]
+        card img/src='/images/summer-tree.png' heading='Workshops' href='workshops.html'
+          : For girls aged 11 to 14, these could be just what she needs to rebuild her self-confidence while learning some simple but powerful, coping tools.
+          button: Learn More
 
-              p : I think this is a wonderful thing that Nicola is offering and would recommend it to anyone.
+        card img/src='/images/spring-tree.png' heading='One to One' href='one-to-one.html'
+          : Working with girls 10 yrs and up. These sessions are more flexible and provide a safe and secure space to talk and share their personal difficulties.
+          button: Learn More
 
-              p : – Louise Reddington
+  workshops < sidebar-page
+    sidebar/
+      class/[text-sm space-y-6]
+      img src='images/summer-tree.png'
 
-            div class=[space-y-4]
-              p : My daughter was suffering from low self-esteem and was finding teenage friends difficult. This course really helped her. She learned how to think more positively, she made some new friends and she looked forward to it every week.
-              
-              p : It’s not that easy to get a teenager out of bed on a Saturday morning but this course really motivated her. She especially loved making her journal, her den and her mood board.
+      h2 class=[text-center]: From the Parents
 
-              p : Maddy says “Nicola is easy to talk to and really cares”.
+      section
+        p : I can’t tell you how much my daughter has enjoyed Nicola’s workshops.
 
-              p : – Jane Harman
+        p : She is a very shy child that finds social situations very difficult, so when I say that she didn’t miss one session and she was ready every Saturday waiting to go, it tells me a lot, it says she enjoyed being there and over the weeks she has learnt so much about herself. Nicola made her feel at ease and able to join in.
 
+        p : I think this is a wonderful thing that Nicola is offering and would recommend it to anyone.
 
-          column class/[flex:2 w='2/3' space-y-4]
-            h1 class=[text-5xl]: Group Workshops
+        p : – Louise Reddington
 
-            div class/[py-10] 
-              quote by='Evi, age 12'
-                : “I love it here because it enables me to release my stress from school. Also it helps me to believe in myself more. I am learning to be kind to myself and the people around me.”
+      section
+        p : My daughter was suffering from low self-esteem and was finding teenage friends difficult. This course really helped her. She learned how to think more positively, she made some new friends and she looked forward to it every week.
+      
+        p : It’s not that easy to get a teenager out of bed on a Saturday morning but this course really motivated her. She especially loved making her journal, her den and her mood board.
 
-            p :
-              These workshops provide a safe, secure environment in which your daughter can rediscover her enjoyment of life. There are no lectures, just love and a compassionate atmosphere where she can share quality time and make friends.
+        p : Maddy says “Nicola is easy to talk to and really cares”.
 
-            p :
-              In today’s society girls are increasingly anxious and critical about themselves and their friends. Many are feeling hopeless, lonely, insecure or afraid to speak out in case of being ridiculed or judged. During these sessions we embark on a journey of self-discovery and positive empowerment. The girls share experiences that tie them together and show them they’re not alone. They will develop a set of tools to carry with them throughout life.
-
-            p :
-              Over the eight weeks we cover:
-
-            ul class=[list-disc ml-10 space-y-1]
-              li : Being kind to me.
-              li : What makes a good friend?
-              li : Why being yourself is important.
-              li : Meaningful self-evaluation criteria; healthy ways to evaluate one’s self worth.
-              li : The power of having positive thoughts, how to reverse negative self-talk.
-              li : Understanding and coping with stress and anxiety.
-              li : Using breathing exercises and meditation to stay calm.
-              li : Empathy and kindness.
-              li : Facing fears. Positive affirmations.
-              li : Strengthening relationships at home, listening to the ones we love.
-              li : Gratitude and why it matters.
-              li : Having a fixed or growth mindset.
-              li : Having healthy relationships.
-              li : Making goals and sticking to them.
-              li : Navigating social media and keeping safe online.
-
-  one-to-one-page =
-    $file = 'one-to-one.html'
-    page
-      main =
-        columns class/[space-x-16]
-          column class/[space-y-10 text-sm]
-            img src='images/spring-tree.png'
-
-          column class/[flex:2 w='2/3' space-y-4]
-            h1 class=[text-5xl]: One to One Mentoring
-
-            p : Structured one to one sessions are helpful for girls who need more individual attention, giving them the space and time to talk through their thoughts and feelings in a safe and supportive environment.
-
-            p : During this time it is important that we establish trust. We will work on your childs individual issues. These will be self guided.
-
-            p : We may use creative tools such as journaling as a way to explore ones needs.
-
-            p : A course of 6 to 8 weeks is usually recommended. The sessions will last one hour.
-
-            p : If it is discovered that your daughter is facing more serious challenges, it may be helpful to refer her on to a more specialised therapist. 
-
-            p : Please contact me to set up an initial, free, consultation to assess your child’s needs at nicola@nicolalocke.com or telephone 07886 404098. 
-
-            p : The cost of one to one will be charged at £35.00ph and can be paid in cash or by bank transfer. 
+        p : – Jane Harman
 
 
+    main =
+      h1 class=[text-5xl]: Group Workshops
 
-  testimonials-page =
-    $file = 'testimonials.html'
-    page
+      box-quote class/[my-10] by='Evi, age 12'
+        : I love it here because it enables me to release my stress from school. Also it helps me to believe in myself more. I am learning to be kind to myself and the people around me.
 
-  about-page =
-    $file = 'about.html'
-    page
-      main =
-        columns class/[space-x-16]
-          column class/[space-y-10 text-sm]
-            img class=[rounded-full] src='images/nicola.jpg'
+      p :
+        These workshops provide a safe, secure environment in which your daughter can rediscover her enjoyment of life. There are no lectures, just love and a compassionate atmosphere where she can share quality time and make friends.
 
-          column class/[flex:2 w='2/3' space-y-4]
-            h1 class=[text-5xl]: About Nicola
+      p :
+        In today’s society girls are increasingly anxious and critical about themselves and their friends. Many are feeling hopeless, lonely, insecure or afraid to speak out in case of being ridiculed or judged. During these sessions we embark on a journey of self-discovery and positive empowerment. The girls share experiences that tie them together and show them they’re not alone. They will develop a set of tools to carry with them throughout life.
 
-            div class=[row text-2xl space-x-6]
-              div : nicola@nicolalocke.com
-              div : 07886 266373
+      p :
+        Over the eight weeks we cover:
 
-            p : I am a creative and inspirational youth mentor with over thirty years experience working with children and teens. Most recently my focus has been on developing workshops for tween and teen girls as I’ve seen how they are increasingly facing problems they’re unable to solve by themselves. Girls are getting trapped in a competitive world which is causing them to become more isolated and unhappy.
+      ul
+        li : Being kind to me.
+        li : What makes a good friend?
+        li : Why being yourself is important.
+        li : Meaningful self-evaluation criteria; healthy ways to evaluate one’s self worth.
+        li : The power of having positive thoughts, how to reverse negative self-talk.
+        li : Understanding and coping with stress and anxiety.
+        li : Using breathing exercises and meditation to stay calm.
+        li : Empathy and kindness.
+        li : Facing fears. Positive affirmations.
+        li : Strengthening relationships at home, listening to the ones we love.
+        li : Gratitude and why it matters.
+        li : Having a fixed or growth mindset.
+        li : Having healthy relationships.
+        li : Making goals and sticking to them.
+        li : Navigating social media and keeping safe online.
 
-            p : Then, instead of taking advice from parents or other adults, girls often turn to peers who are not mature or knowledgeable enough to provide the right kind of support. For this and other reasons they are failing to develop into the healthy and confident young women they should be.
+  one-to-one < sidebar-page
+    sidebar/
+      class/[space-y-6]
 
-            p : In these workshops we establish a positive and accepting environment where everyone can relax and truly be themselves. We use creative journaling, guided discussion, vision boards, self-evaluation, calming and breathing techniques, collage and other tools that strengthen their self-awareness, emotional intelligence, confidence and assertiveness. 
+      div class=[bg-green-400 rounded text-center py-2]
+        div class=[text-2xl ]: Free 20 min Consultation
+        div class=[text-lg font-bold mb-2 uppercase]: Book Now
+        div class=[text-base]
+          : 07886 404098 ~
+          ' '
+          mailto email: nicola@nicolalocke.com
 
-            p : Girls learn how to stay focused, take control and how to not lose sight of potential long term consequences of their behaviours. We also focus on diminishing negative thinking patterns that lead to stress, anxiety and a need to conform to peer pressure and the demands of our modern society.
+      img src='images/spring-tree.png'
 
-            p : I work with clients on a one to one basis or in small groups. I will happily adjust myself to the needs of my client. Please feel free to contact me with any concerns or questions.
+    main =
+        h1 class=[text-5xl mb:4 '-mt-4']: One to One Mentoring
 
-            ul class=[list-disc ml-10 space-y-2]
-              li : Qualified in Cognitive Behavioural Therapy (CBT)
-              li : Certified Rock and Water trainer
-              li : Training in therapeutic communication with children
-              li : Head pastoral manager in an international boarding school for two years
-              li : Currently working with young people through local youth clubs in Warwick
-              li : Fully insured and enhanced Disclosure and Barring (DBS) certified.
-              li : Certificates in Child Safeguarding, Self Harm and First Aid
+        p : Structured one to one sessions are helpful for girls who need more individual attention, giving them the space and time to talk through their thoughts and feelings in a safe and supportive environment.
 
-            div class=[py-10]
-              quote by='Maddy, age 14'
-                : “You’ve given me lots of self-confidence and helped me with my friends. You have made me feel much more positive”    
+        p : During this time it is important that we establish trust. We will work on your childs individual issues. These will be self guided.
 
-  contact-page =
-    $file = 'contact.html'
-    page
+        p : We may use creative tools such as journaling as a way to explore ones needs.
+
+        p : A course of 6 to 8 weeks is usually recommended. The sessions will last one hour.
+
+        p : If it is discovered that your daughter is facing more serious challenges, it may be helpful to refer her on to a more specialised therapist. 
+
+        p : Please contact me to set up an free initial consultation to assess your child’s needs at nicola@nicolalocke.com or telephone 07886 404098. 
+
+        p : £70.00 per session (50 minutes). Payment by cash or bank transfer. 
+
+  testimonials < page
+    main =
+      h1 class=[text-center text-5xl mb-2] : Testimonials
+      h2 class=[text-center text-3xl mb-6] : From the Girls
+
+      grid cols:1 gap:8
+        
+        quote by='Amelia' :
+          I know I shouldn't worry about things. This has taught me how to find ways for clearing my mind and destressing. I now know how to help myself.
+        
+        quote :
+          I get a sense of community going to these workshops and a feeling that I am not alone. I really enjoy the creative aspect of it all.
+        
+        quote by='Evie' :
+          It's a great place to come every week. It boosts your confidence. Nicola tells you ways to help with anxiety and stress. There are loads of creative things you get to do.Going on this course will help you deal with the hard things of being a pre-teen or teenage girl.
+
+        quote by='Poppy' :
+          This group and these people have really helped me expand my mind frame and ideas. I have come out of my shell. What we do here makes me feel awesome about myself. Allowing me to develop skills for later life. I feel free to speak and put my hand up.
+
+        quote by='Mollie' :
+          I like all the people I meet. I like the chance to be myself without any pressure. I have learnt how to be brave, how to calm myself in distressing situations and how to make others happy.
+
+        quote by='Maddie' :
+          I like the fact that you meet really good people here and it's a really nice way of boosting your confidence. I am learning a lot about being grateful for your family and friends. It's really fun.
+
+        quote by='Inaria' :
+          Nicola will help many people through many things. Thank&nbsp;you.
+
+        quote by='Jess' :
+          Coming here means I'm relaxed and confident in myself throughout the week
+
+        quote by='Izzie' :
+          Whenever I come here I feel like I can express myself and be me. The atmosphere is relaxing and I've really channelled my creative side. Nicola is very supporting and understanding and I am so glad That I am coming here. The sessions have all been so eye-opening. I have really benefited and gained more self-awareness. They have fully engaged me every time. I think everyone needs this in their life.
+
+      h2 class=[text-center text-3xl mb-6 mt-12]: From the Parents
+
+      grid cols:1 gap:8
+
+        quote by='Gemma Edwards' class/[space-y-2]
+          p : I wanted to thank you for the wonderful Empowerment Course Amelia attended. Before she started, Amelia was transitioning into secondary school and her anxiety levels had reached such a pitch, I didn’t quite know what to do with her. Then I saw your courses advertised and from the description, I thought it must be worth giving it a go.
+          
+          p : Amelia was so skeptical and not looking forward to it, that I thought it would be a bonus if she just attends the first one. However, I couldn’t believe her reaction when I picked her up, she enjoyed it so much and couldn’t wait to return the next week. You offer such a calm, relaxing atmosphere and you have such a reassuring manor, the girls immediately feel at ease. The activities are great and the group sizes are perfect so they do not feel intimidated.
+          
+          p : In this world of social media and perceptions of how they should be, it is so lovely for like minded girls to come together and realise that they are not alone. Amelia always used to rave about your snack selection too!! And thank you so much for their lovely gift, Amelia was thrilled with this and has it pride of place in her room, together with her mood board. 
+          
+          p : It was the best money I have ever spent on Amelia and very reasonable for what you include. If there was ever a follow on course, we would jump at the chance, as she was so sad when it was over. 
+          
+          p : Having said that, the fact that you have set up this You Tube channel for the girls during this time of Corona is brilliant, Amelia has been adding to her journal too. So thank you for everything you have done for Amelia, the way she can now calm herself down in a situation is brilliant and it really helped with her outlook on friendships.
+
+        section class=[space-y-8]
+          quote by='Mum' :
+            My 12 year-old daughter thoroughly enjoyed the 8-week course. I signed her up for it to help her learn some coping skills, tips and techniques, anything which would help her navigate the early months of secondary school. She loved it and was very keen to bring along her journal every week. I had the utmost trust in Nicola: she is a lovely woman and the sessions had a very warm and caring feel to them - definitely a very safe space for the girls. I wish I had found this course sooner. I wouldn’t hesitate to recommend it.
+
+          quote by='Nicky Baldwin'
+            p : My daughter has been going to Nicola’s group for nearly 5 weeks. The first week she started she was very clingy and upset about meeting new people. By the time anxious mommy went Back two hours later, I peeped through the door to my daughter so happy and content, it brought tears too my eyes. My daughter has had a rough few months with a lot to deal with and finds making and keeping friends hard. She has dealt with bullying and low self esteem , has no confidence and hates the way she looks. Being at this group, I have seen my daughter coming back to her old self. She has a bit more confidence, still a long way to go but, such an amazing group. 
+
+            p : Nicola sets the girls up with tools to cope. Each week different challenges, it’s amazing. I never thought I would see my daughter look forward to anything again but, she loves her Saturday morning meets and will definitely be attending again if Nicola sets up a meet for them.  Thanks again for all your help so far and your constant support through emails etc. I would highly recommend
+
+        quote by='A Mum' 
+          p : Seeing my daughter struggle with anxiety and negative thoughts has been tough.  Not to mention drying the tears caused by friends and social media...
+
+          p : But what a difference a few weeks meeting with Nicola has made!  She is up and eager to get to group on a Saturday morning.  She enjoys working on her journal, and is always adding little bits to it.  She is starting to understand how important caring for herself and being herself is.  When the tough moments hit, she handles it much more positively, using the methods learned.  
+
+          p : Nicola gives the girls a relaxed and safe environment to be themselves while giving them tools to become strong, confident and happy young women.  I would highly recommend her empowerment course for any young lady struggling with the stress of being a teenager.  
+
+  about < sidebar-page face/class/[hidden]
+    sidebar =
+      img class=[rounded-full] src='images/nicola.jpg'
+
+    main =
+      h1 class=[text-5xl]: About Nicola
+
+      row class/[text-2xl space-x-6 mb-8]
+        mailto email='nicola@nicolalocke.com'
+        div : 07886 266373
+
+      box-quote class/[my-10] by='Maddy, age 14'
+        : “You’ve given me lots of self-confidence and helped me with my friends. You have made me feel much more positive”    
+
+      p : I am a creative and inspirational youth mentor and workshop facilitator, with over thirty years experience working with children and teens. Most recently my focus has been on developing workshops for tween and teen girls as I’ve seen how they are increasingly facing problems they’re unable to solve by themselves. 
+
+      p : I work with clients on a one to one basis or in small groups. I will happily adjust myself to the needs of my client. Please feel free to contact me with any concerns or questions.
+
+      ul
+        li : Qualified in Cognitive Behavioural Therapy (CBT)
+        li : Certified Rock and Water trainer
+        li : Training in therapeutic communication with children
+        li : Head pastoral manager in an international boarding school for two years
+        li : Fully insured and enhanced Disclosure and Barring (DBS) certified.
+        li : Certificates in Child Safeguarding, Self Harm and First Aid
+
+
+  contact < page
+    main =
+      columns class/[space-x-16]
+        column class/[space-y-10 text-sm]
+          img src='images/word-tree.png'
+
+        column class/[flex:2 w='2/3' space-y-2]
+          h1 class=[text-5xl]: Contact Nicola
+        
+          section class/[text-xl]
+            mailto email='nicola@nicolalocke.com'
+            div : 07886 404098
+
+          h2 class=[text-2xl pt-10] : Mailing List
+
+          p : Please sign up to be notified of future workshops and general news.
+
+          mailchimp-signup
