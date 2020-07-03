@@ -5,15 +5,17 @@ def page
       link rel:stylesheet href="/css/styles.css"
       link rel:stylesheet href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway&display=swap"
       title : Nicola Locke ~ Mentor / Facilitator
+      meta name="viewport" _content="width=device-width, initial-scale=1.0"
+
     body class=[raleway col w-full]
-      div format=[max-w-6xl mx-auto px-10 col flex-grow w-full]
-        !header format=[flex mt:8 mb:16]
+      div format=[max-w-6xl mx-auto px-10 col flex-grow]
+        !header format=[flex mt:8 mb:16 flex-col items-center lg=[flex-row]]
           a class=[flex items-center] href='/'
             !face < img class=[w-16 rounded-full mr-4 mt-2] src='images/nicola.jpg'
             div
               h1 format=[text:4xl] : Nicola Locke
               h2 class=[text-gray-600 text-lg '-mt-2'] 'Mentor / Facilitator'
-          div class=[flex ml-auto items-center space-x-5 text-xl] 
+          div class=[flex items-center space-x-5 text-xl lg=[ml-auto] mt-10 whitespace-no-wrap flex-wrap justify-center px-14] 
             a href='workshops.html'    : Workshops
             a href='one-to-one.html'   : One to One
             a href='testimonials.html' : Testimonials
@@ -22,11 +24,11 @@ def page
         !main class=[flex-1]
           !content.
         !footer class=[mt-auto]
-          div class=[row justify-around my-20 border-t pt-10]
-            img src='images/logos/ACHP.jpg'
-            img src='images/logos/BSY.png'
-            img src='images/logos/CPD.jpg'
-            img src='images/logos/Rock-and-Water.jpg'
+          div class=[row justify-around my-20 border-t pt-10 flex-wrap]
+            img class=[px-5] src='images/logos/ACHP.jpg'
+            img class=[px-5] src='images/logos/BSY.png'
+            img class=[px-5] src='images/logos/CPD.jpg'
+            img class=[px-5] src='images/logos/Rock-and-Water.jpg'
 
 def sidebar-page < page
   main =
@@ -49,11 +51,10 @@ def box-quote < div class=[max-w-xl p-4 text-center border-blue-400 mx-auto bg-g
 
 def quote < div class=[max-w-xl p-4 text-center border-blue-400 mx-auto]
   div class=[text-lg space-y-4]
-   : &ldquo;
    !content.
   !by < div class=[mt-4 font-bold] ''
 
-def card < a href='' class=[col items-center space-y-6]
+def card < a href='' class=[col items-center space-y-6 max-w-md]
   !img
   !heading < h2 class=[font-bold text-xl] ''
   div class=[text-center] !content.
@@ -67,7 +68,7 @@ def website
 
 def grid < div class=['grid' grid=[!cols='2'] !gap:0]
 
-def row < div class=[row]
+def row < div class=[md=[flex]]
 
 def mailchimp-signup :
   <!-- Begin Mailchimp Signup Form -->
@@ -100,12 +101,11 @@ def mailchimp-signup :
 
 def mailto < a href=[!email=''] !email.
 
-def hero < columns
-  div class/[px-6 col w='1/2']
-    !promo.
-    !img
+def hero < div class/[px-4 lg=[flex] text-center]
+  div class/[px-6 col lg=[w='1/2']]
+    !img class=[max-w-sm mx-auto w-full]
     
-  column class/[px-4 col justify-between text-center]
+  div class/[px-4 col justify-between text-center lg=[w='1/2' space-y:4] space-y:8 max-w-lg]
     div class=[]
       !title < h1 class=[text:4xl] ''
       !subtitle < h2 class=[text:2xl text-gray-600 uppercase] ''
@@ -119,14 +119,13 @@ def promo < div class=[rounded text-center py-2 px-6 inline-block mx-auto]
     ' '
     mailto email: nicola@nicolalocke.com
 
-
 website
 
   index < page
     main/class=[space-y:20 centered-column]
 
     hero img/src='/images/word-tree.png'
-      title:    My Life My Happiness
+      title:    My Life My&nbsp;Happiness
       subtitle: Life Tools for Girls
 
 
@@ -142,7 +141,7 @@ website
 
     youtube class=[w-full max-w-xl h-64]
 
-    row class/[max-w-3xl mx-auto space-x-20]
+    div class/[lg=[flex] max-w-3xl mx-auto lg=[space-x-20 space-y-0] space-y-20]
       card img/src='/images/summer-tree.png' img/class/[max-w-xs] heading='Workshops' href='workshops.html'
         : For girls aged 11 to 14, these could be just what she needs to rebuild her self-confidence while learning some simple but powerful, coping tools.
         button: Learn More
@@ -175,7 +174,6 @@ website
         p : Maddy says “Nicola is easy to talk to and really cares”.
 
         p : – Jane Harman
-
 
     h1 class=[text:5xl]: Group Workshops
 
@@ -233,69 +231,63 @@ website
     p : £70.00 per session (50 minutes). Payment by cash or bank transfer. 
 
   testimonials < page
-    main =
-      h1 class=[text-center text-5xl mb-2] : Testimonials
-      h2 class=[text-center text-3xl mb-6] : From the Girls
+    h1 class=[text-center text-5xl mb-2] : Testimonials
+    h2 class=[text-center text-3xl mb-6] : From the Girls
 
-      grid cols:1 gap:8
-        
-        quote by='Amelia' :
-          I know I shouldn't worry about things. This has taught me how to find ways for clearing my mind and destressing. I now know how to help myself.
-        
-        quote :
-          I get a sense of community going to these workshops and a feeling that I am not alone. I really enjoy the creative aspect of it all.
-        
-        quote by='Evie' :
-          It's a great place to come every week. It boosts your confidence. Nicola tells you ways to help with anxiety and stress. There are loads of creative things you get to do.Going on this course will help you deal with the hard things of being a pre-teen or teenage girl.
+    quote by='Amelia' :
+      I know I shouldn't worry about things. This has taught me how to find ways for clearing my mind and destressing. I now know how to help myself.
+    
+    quote by='Evie' :
+      It's a great place to come every week. It boosts your confidence. Nicola tells you ways to help with anxiety and stress. There are loads of creative things you get to do.Going on this course will help you deal with the hard things of being a pre-teen or teenage girl.
 
-        quote by='Poppy' :
-          This group and these people have really helped me expand my mind frame and ideas. I have come out of my shell. What we do here makes me feel awesome about myself. Allowing me to develop skills for later life. I feel free to speak and put my hand up.
+    quote by='Anon' :
+      I get a sense of community going to these workshops and a feeling that I am not alone. I really enjoy the creative aspect of it all.
+    
+    quote by='Poppy' :
+      This group and these people have really helped me expand my mind frame and ideas. I have come out of my shell. What we do here makes me feel awesome about myself. Allowing me to develop skills for later life. I feel free to speak and put my hand up.
 
-        quote by='Mollie' :
-          I like all the people I meet. I like the chance to be myself without any pressure. I have learnt how to be brave, how to calm myself in distressing situations and how to make others happy.
+    quote by='Mollie' :
+      I like all the people I meet. I like the chance to be myself without any pressure. I have learnt how to be brave, how to calm myself in distressing situations and how to make others happy.
 
-        quote by='Maddie' :
-          I like the fact that you meet really good people here and it's a really nice way of boosting your confidence. I am learning a lot about being grateful for your family and friends. It's really fun.
+    quote by='Maddie' :
+      I like the fact that you meet really good people here and it's a really nice way of boosting your confidence. I am learning a lot about being grateful for your family and friends. It's really fun.
 
-        quote by='Inaria' :
-          Nicola will help many people through many things. Thank&nbsp;you.
+    quote by='Inaria' :
+      Nicola will help many people through many things. Thank&nbsp;you.
 
-        quote by='Jess' :
-          Coming here means I'm relaxed and confident in myself throughout the week
+    quote by='Jess' :
+      Coming here means I'm relaxed and confident in myself throughout the week
 
-        quote by='Izzie' :
-          Whenever I come here I feel like I can express myself and be me. The atmosphere is relaxing and I've really channelled my creative side. Nicola is very supporting and understanding and I am so glad That I am coming here. The sessions have all been so eye-opening. I have really benefited and gained more self-awareness. They have fully engaged me every time. I think everyone needs this in their life.
+    quote by='Izzie' :
+      Whenever I come here I feel like I can express myself and be me. The atmosphere is relaxing and I've really channelled my creative side. Nicola is very supporting and understanding and I am so glad That I am coming here. The sessions have all been so eye-opening. I have really benefited and gained more self-awareness. They have fully engaged me every time. I think everyone needs this in their life.
 
-      h2 class=[text-center text-3xl mb-6 mt-12]: From the Parents
+    h2 class=[text-center text-3xl mb-6 mt-12]: From the Parents
 
-      grid cols:1 gap:8
+    quote by='Gemma Edwards' class/[space-y-2]
+      p : I wanted to thank you for the wonderful Empowerment Course Amelia attended. Before she started, Amelia was transitioning into secondary school and her anxiety levels had reached such a pitch, I didn’t quite know what to do with her. Then I saw your courses advertised and from the description, I thought it must be worth giving it a go.
+      
+      p : Amelia was so skeptical and not looking forward to it, that I thought it would be a bonus if she just attends the first one. However, I couldn’t believe her reaction when I picked her up, she enjoyed it so much and couldn’t wait to return the next week. You offer such a calm, relaxing atmosphere and you have such a reassuring manor, the girls immediately feel at ease. The activities are great and the group sizes are perfect so they do not feel intimidated.
+      
+      p : In this world of social media and perceptions of how they should be, it is so lovely for like minded girls to come together and realise that they are not alone. Amelia always used to rave about your snack selection too!! And thank you so much for their lovely gift, Amelia was thrilled with this and has it pride of place in her room, together with her mood board. 
+      
+      p : It was the best money I have ever spent on Amelia and very reasonable for what you include. If there was ever a follow on course, we would jump at the chance, as she was so sad when it was over. 
+      
+      p : Having said that, the fact that you have set up this You Tube channel for the girls during this time of Corona is brilliant, Amelia has been adding to her journal too. So thank you for everything you have done for Amelia, the way she can now calm herself down in a situation is brilliant and it really helped with her outlook on friendships.
 
-        quote by='Gemma Edwards' class/[space-y-2]
-          p : I wanted to thank you for the wonderful Empowerment Course Amelia attended. Before she started, Amelia was transitioning into secondary school and her anxiety levels had reached such a pitch, I didn’t quite know what to do with her. Then I saw your courses advertised and from the description, I thought it must be worth giving it a go.
-          
-          p : Amelia was so skeptical and not looking forward to it, that I thought it would be a bonus if she just attends the first one. However, I couldn’t believe her reaction when I picked her up, she enjoyed it so much and couldn’t wait to return the next week. You offer such a calm, relaxing atmosphere and you have such a reassuring manor, the girls immediately feel at ease. The activities are great and the group sizes are perfect so they do not feel intimidated.
-          
-          p : In this world of social media and perceptions of how they should be, it is so lovely for like minded girls to come together and realise that they are not alone. Amelia always used to rave about your snack selection too!! And thank you so much for their lovely gift, Amelia was thrilled with this and has it pride of place in her room, together with her mood board. 
-          
-          p : It was the best money I have ever spent on Amelia and very reasonable for what you include. If there was ever a follow on course, we would jump at the chance, as she was so sad when it was over. 
-          
-          p : Having said that, the fact that you have set up this You Tube channel for the girls during this time of Corona is brilliant, Amelia has been adding to her journal too. So thank you for everything you have done for Amelia, the way she can now calm herself down in a situation is brilliant and it really helped with her outlook on friendships.
+    quote by='Mum' :
+      My 12 year-old daughter thoroughly enjoyed the 8-week course. I signed her up for it to help her learn some coping skills, tips and techniques, anything which would help her navigate the early months of secondary school. She loved it and was very keen to bring along her journal every week. I had the utmost trust in Nicola: she is a lovely woman and the sessions had a very warm and caring feel to them - definitely a very safe space for the girls. I wish I had found this course sooner. I wouldn’t hesitate to recommend it.
 
-        section class=[space-y-8]
-          quote by='Mum' :
-            My 12 year-old daughter thoroughly enjoyed the 8-week course. I signed her up for it to help her learn some coping skills, tips and techniques, anything which would help her navigate the early months of secondary school. She loved it and was very keen to bring along her journal every week. I had the utmost trust in Nicola: she is a lovely woman and the sessions had a very warm and caring feel to them - definitely a very safe space for the girls. I wish I had found this course sooner. I wouldn’t hesitate to recommend it.
+    quote by='Nicky Baldwin'
+      p : My daughter has been going to Nicola’s group for nearly 5 weeks. The first week she started she was very clingy and upset about meeting new people. By the time anxious mommy went Back two hours later, I peeped through the door to my daughter so happy and content, it brought tears too my eyes. My daughter has had a rough few months with a lot to deal with and finds making and keeping friends hard. She has dealt with bullying and low self esteem , has no confidence and hates the way she looks. Being at this group, I have seen my daughter coming back to her old self. She has a bit more confidence, still a long way to go but, such an amazing group. 
 
-          quote by='Nicky Baldwin'
-            p : My daughter has been going to Nicola’s group for nearly 5 weeks. The first week she started she was very clingy and upset about meeting new people. By the time anxious mommy went Back two hours later, I peeped through the door to my daughter so happy and content, it brought tears too my eyes. My daughter has had a rough few months with a lot to deal with and finds making and keeping friends hard. She has dealt with bullying and low self esteem , has no confidence and hates the way she looks. Being at this group, I have seen my daughter coming back to her old self. She has a bit more confidence, still a long way to go but, such an amazing group. 
+      p : Nicola sets the girls up with tools to cope. Each week different challenges, it’s amazing. I never thought I would see my daughter look forward to anything again but, she loves her Saturday morning meets and will definitely be attending again if Nicola sets up a meet for them.  Thanks again for all your help so far and your constant support through emails etc. I would highly recommend
 
-            p : Nicola sets the girls up with tools to cope. Each week different challenges, it’s amazing. I never thought I would see my daughter look forward to anything again but, she loves her Saturday morning meets and will definitely be attending again if Nicola sets up a meet for them.  Thanks again for all your help so far and your constant support through emails etc. I would highly recommend
+    quote by='A Mum' 
+      p : Seeing my daughter struggle with anxiety and negative thoughts has been tough.  Not to mention drying the tears caused by friends and social media...
 
-        quote by='A Mum' 
-          p : Seeing my daughter struggle with anxiety and negative thoughts has been tough.  Not to mention drying the tears caused by friends and social media...
+      p : But what a difference a few weeks meeting with Nicola has made!  She is up and eager to get to group on a Saturday morning.  She enjoys working on her journal, and is always adding little bits to it.  She is starting to understand how important caring for herself and being herself is.  When the tough moments hit, she handles it much more positively, using the methods learned.  
 
-          p : But what a difference a few weeks meeting with Nicola has made!  She is up and eager to get to group on a Saturday morning.  She enjoys working on her journal, and is always adding little bits to it.  She is starting to understand how important caring for herself and being herself is.  When the tough moments hit, she handles it much more positively, using the methods learned.  
-
-          p : Nicola gives the girls a relaxed and safe environment to be themselves while giving them tools to become strong, confident and happy young women.  I would highly recommend her empowerment course for any young lady struggling with the stress of being a teenager.  
+      p : Nicola gives the girls a relaxed and safe environment to be themselves while giving them tools to become strong, confident and happy young women.  I would highly recommend her empowerment course for any young lady struggling with the stress of being a teenager.  
 
   about < sidebar-page face/class/[hidden]
     sidebar =
