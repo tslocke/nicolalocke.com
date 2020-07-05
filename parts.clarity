@@ -8,7 +8,7 @@ def page
       meta name="viewport" _content="width=device-width, initial-scale=1.0"
 
     body class=[raleway col max-w-6xl mx-auto]
-      div format=[px-10 col flex-1]
+      div format=[px-10 col flex-grow] style='min-height: 100vh'
         !header format=[flex mt:8 mb:16 flex-col items-center lg=[flex-row]]
           a class=[flex items-center] href='/'
             !face < img class=[w-20 rounded-full mr-4 mt-2] src='images/nicola.jpg'
