@@ -2,25 +2,26 @@ def page
   $file = [$name. '.html']
   html
     head 
-      link rel:stylesheet href="/css/styles.css"
-      link rel:stylesheet href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway&display=swap"
-      title : Nicola Locke ~ Mentor / Facilitator
+      link rel:stylesheet href="css/styles.css"
+      link rel:stylesheet href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway:wght@400;700&display=swap"
+      title : Nicola Locke ~ Mentor / Facilitator 
       meta name="viewport" _content="width=device-width, initial-scale=1.0"
 
-    body class=[raleway col w-full]
-      div format=[max-w-6xl mx-auto px-10 col flex-grow]
+    body class=[raleway col max-w-6xl mx-auto]
+      div format=[px-10 col flex-1]
         !header format=[flex mt:8 mb:16 flex-col items-center lg=[flex-row]]
           a class=[flex items-center] href='/'
-            !face < img class=[w-16 rounded-full mr-4 mt-2] src='images/nicola.jpg'
-            div
+            !face < img class=[w-20 rounded-full mr-4 mt-2] src='images/nicola.jpg'
+            div class=[text-left pb-2]
               h1 format=[text:4xl] : Nicola Locke
               h2 class=[text-gray-600 text-lg '-mt-2'] 'Mentor / Facilitator'
-          div class=[flex items-center space-x-5 text-xl lg=[ml-auto] mt-10 whitespace-no-wrap flex-wrap justify-center px-14] 
-            a href='workshops.html'    : Workshops
-            a href='one-to-one.html'   : One to One
-            a href='testimonials.html' : Testimonials
-            a href='about.html'        : About
-            a href='contact.html'      : Contact
+              h2 class=[text-gray-500 font-normal text-sm uppercase] 'Hampstead, London'
+          div class=[flex items-center space-x-5 text-xl lg=[ml-auto] whitespace-no-wrap flex-wrap justify-center px-14] 
+            a class=[pt-2] href='workshops.html'    : Workshops
+            a class=[pt-2] href='one-to-one.html'   : One to One
+            a class=[pt-2] href='testimonials.html' : Testimonials
+            a class=[pt-2] href='about.html'        : About
+            a class=[pt-2] href='contact.html'      : Contact
         !main class=[flex-1]
           !content.
         !footer class=[mt-auto]
@@ -32,9 +33,9 @@ def page
 
 def sidebar-page < page
   main =
-    columns class=[row space-x-16]
-      !sidebar < div class/[w='1/3'] ''
-      !main < column class/[flex:2 w='2/3'] !content.
+    !columns class=[flex flex-col items-center md=[flex flex-row space-x-16 items-start]]
+      !sidebar < div class/[md=[w='1/3']] ''
+      !main < column class/[md=[flex:2 w='2/3']] !content.
 
 def columns < div class=[row]
 
@@ -124,7 +125,7 @@ website
   index < page
     main/class=[space-y:20 centered-column]
 
-    hero img/src='/images/word-tree.png'
+    hero img/src='images/word-tree.png'
       title:    My Life My&nbsp;Happiness
       subtitle: Life Tools for Girls
 
@@ -142,18 +143,18 @@ website
     youtube class=[w-full max-w-xl h-64]
 
     div class/[lg=[flex] max-w-3xl mx-auto lg=[space-x-20 space-y-0] space-y-20]
-      card img/src='/images/summer-tree.png' img/class/[max-w-xs] heading='Workshops' href='workshops.html'
+      card img/src='images/summer-tree.png' img/class/[max-w-xs] heading='Workshops' href='workshops.html'
         : For girls aged 11 to 14, these could be just what she needs to rebuild her self-confidence while learning some simple but powerful, coping tools.
         button: Learn More
 
-      card img/src='/images/spring-tree.png' img/class/[max-w-xs] heading='One to One' href='one-to-one.html'
+      card img/src='images/spring-tree.png' img/class/[max-w-xs] heading='One to One' href='one-to-one.html'
         : Working with girls 10 yrs and up. These sessions are more flexible and provide a safe and secure space to talk and share their personal difficulties.
         button: Learn More
 
-  workshops < sidebar-page
+  workshops < sidebar-page columns/class/[flex-col-reverse]
     sidebar/
       class/[space-y:6]
-      img src='images/summer-tree.png'
+      img class=[max-w-sm md=[max-w-full mt-0] mx-auto mt-10] src='images/summer-tree.png'
 
       h2 class=[text-center] : From the Parents
 
@@ -212,9 +213,9 @@ website
 
       promo class/[bg-green-400]
 
-      img src='images/spring-tree.png'
+      img class=[max-w-sm md=[max-w-full]] src='images/spring-tree.png'
 
-    h1 class=[text-5xl mb:4 '-mt-4']: One to One Mentoring
+    h1 class=[text-3xl md=[text-5xl '-mt-4'] mb:4 mt:4]: One to One Mentoring
 
     p : Structured one to one sessions are helpful for girls who need more individual attention, giving them the space and time to talk through their thoughts and feelings in a safe and supportive environment.
 
@@ -233,6 +234,7 @@ website
   testimonials < page
     h1 class=[text-center text-5xl mb-2] : Testimonials
     h2 class=[text-center text-3xl mb-6] : From the Girls
+
 
     quote by='Amelia' :
       I know I shouldn't worry about things. This has taught me how to find ways for clearing my mind and destressing. I now know how to help myself.
@@ -289,14 +291,14 @@ website
 
       p : Nicola gives the girls a relaxed and safe environment to be themselves while giving them tools to become strong, confident and happy young women.  I would highly recommend her empowerment course for any young lady struggling with the stress of being a teenager.  
 
-  about < sidebar-page face/class/[hidden]
+  about < sidebar-page face/class/[lg=[hidden]]
     sidebar =
-      img class=[rounded-full] src='images/nicola.jpg'
-      promo class/[bg-green-300 mt-8]
+      img class=[w-40 mx-auto md=[w-full] lg=[block] rounded-full hidden mb-8] src='images/nicola.jpg'
+      promo class/[bg-green-300 mb-10]
 
-    h1 class=[text-5xl]: About Nicola
+    h1 class=[text-center text-4xl md=[text-left text-5xl]]: About Nicola
 
-    row class/[text-2xl space-x-6 mb-8]
+    row class/[text-xl mb-8 text-center md=[space-x-6 text-2xl text-left]]
       mailto email='nicola@nicolalocke.com'
       div : 07886 266373
 
@@ -317,16 +319,17 @@ website
 
   contact < sidebar-page
     sidebar/
-      class/[w='1/2']
-      img src='images/word-tree.png'
+      img class=[max-w-sm md=[max-w-full]] src='images/word-tree.png'
 
     h1 class=[text-5xl]: Contact Nicola
   
-    section class/[text-xl]
+    section class/[text-xl mb-10]
       mailto email='nicola@nicolalocke.com'
       div : 07886 404098
 
-    h2 class=[text-2xl pt-10] : Mailing List
+    p : One-to-one consultations are located at my studio a short walk from Hampstead Heath Overground station.
+
+    h2 class=[text-2xl pt-6] : Mailing List
 
     p : Please sign up to be notified of future workshops and general news.
 
