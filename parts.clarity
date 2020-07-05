@@ -108,7 +108,7 @@ def hero < div class/[lg=[flex px-4] text-center]
     
   div class/[col justify-between text-center lg=[px:4 w='1/2' space-y:4] space-y:8 max-w-lg]
     div class=[]
-      !title < h1 class=[text:4xl] ''
+      !title < h1 class=[uppercase text:4xl] ''
       !subtitle < h2 class=[text:2xl text-gray-600 uppercase] ''
     !content.
 
@@ -126,9 +126,7 @@ website
     main/class=[space-y:20 centered-column]
 
     hero img/src='images/word-tree.png'
-      title:    My Life My&nbsp;Happiness
-      subtitle: Life Tools for Girls
-
+      title:    Life Tools for Girls
 
       section class/[text-gray-700 text:lg]
         p : Group workshops and one-to-one mentoring with a focus on creativity and fun, giving girls the tools they need to stay true to themselves, and the strength to use them.
