@@ -9,7 +9,7 @@ def page
 
     body class=[raleway col max-w-6xl mx-auto]
       div format=[px-5 md=[px-10] col flex-grow] style='min-height: 100vh'
-        !header format=[flex mt:8 mb:16 flex-col items-center lg=[flex-row]]
+        !header format=[flex mt:8 mb:6 flex-col items-center lg=[flex-row mb:16]]
           a class=[flex items-center] href='/'
             !face < img class=[w-20 rounded-full mr-4 mt-2] src='images/nicola.jpg'
             div class=[text-left pb-2]
