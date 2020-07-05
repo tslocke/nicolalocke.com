@@ -8,7 +8,7 @@ def page
       meta name="viewport" _content="width=device-width, initial-scale=1.0"
 
     body class=[raleway col max-w-6xl mx-auto]
-      div format=[px-10 col flex-grow] style='min-height: 100vh'
+      div format=[px-5 md=[px-10] col flex-grow] style='min-height: 100vh'
         !header format=[flex mt:8 mb:16 flex-col items-center lg=[flex-row]]
           a class=[flex items-center] href='/'
             !face < img class=[w-20 rounded-full mr-4 mt-2] src='images/nicola.jpg'
@@ -102,11 +102,11 @@ def mailchimp-signup :
 
 def mailto < a href=[!email=''] !email.
 
-def hero < div class/[px-4 lg=[flex] text-center]
+def hero < div class/[lg=[flex px-4] text-center]
   div class/[px-6 col lg=[w='1/2']]
     !img class=[max-w-sm mx-auto w-full]
     
-  div class/[px-4 col justify-between text-center lg=[w='1/2' space-y:4] space-y:8 max-w-lg]
+  div class/[col justify-between text-center lg=[px:4 w='1/2' space-y:4] space-y:8 max-w-lg]
     div class=[]
       !title < h1 class=[text:4xl] ''
       !subtitle < h2 class=[text:2xl text-gray-600 uppercase] ''
@@ -154,7 +154,7 @@ website
   workshops < sidebar-page columns/class/[flex-col-reverse]
     sidebar/
       class/[space-y:6]
-      img class=[max-w-sm md=[max-w-full mt-0] mx-auto mt-10] src='images/summer-tree.png'
+      img class=[max-w-xs md=[max-w-full mt-0] mx-auto mt-10] src='images/summer-tree.png'
 
       h2 class=[text-center] : From the Parents
 
@@ -176,7 +176,7 @@ website
 
         p : – Jane Harman
 
-    h1 class=[text:5xl]: Group Workshops
+    h1 class=[text:4xl md=[text:5xl]]: Group Workshops
 
     box-quote class/[my:10] by='Evi, age 12'
       : I love it here because it enables me to release my stress from school. Also it helps me to believe in myself more. I am learning to be kind to myself and the people around me.
