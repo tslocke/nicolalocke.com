@@ -8,12 +8,12 @@ def page
       meta name="viewport" _content="width=device-width, initial-scale=1.0"
 
     body class=[raleway col max-w-6xl mx-auto]
-      div format=[px-5 md=[px-10] col flex-grow] style='min-height: 100vh'
-        !header format=[flex mt:8 mb:6 flex-col items-center lg=[flex-row mb:16]]
+      div class=[px-5 md=[px-10] col flex-grow] style='min-height: 100vh'
+        !header class=[flex mt:8 mb:6 flex-col items-center lg=[flex-row mb:16]]
           a class=[flex items-center] href='/'
             !face < img class=[w-20 rounded-full mr-4 mt-1] src='images/nicola.jpg'
             div class=[text-left pb-2]
-              h1 format=[text:4xl] : Nicola Locke
+              h1 class=[text:4xl] : Nicola Locke
               h2 class=[text-gray-600 text-lg '-mt-2'] 'Mentor / Facilitator'
               h2 class=[text-gray-500 font-normal text-sm uppercase] 'Hampstead, London'
           div class=[flex items-center text-xl lg=[ml-auto] whitespace-no-wrap flex-wrap justify-center px-14] 
@@ -32,7 +32,7 @@ def page
             img class=[px-5] src='images/logos/Rock-and-Water.jpg'
 
 def sidebar-page < page
-  main =
+  main/
     !columns class=[flex flex-col items-center md=[flex flex-row space-x-16 items-start]]
       !sidebar < div class/[md=[w='1/3']] ''
       !main < column class/[md=[flex:2 w='2/3']] !content.
@@ -100,7 +100,7 @@ def mailchimp-signup :
   <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
   <!--End mc_embed_signup-->
 
-def mailto < a href=[!email=''] !email.
+def mailto < a href=['mailto:' !email.] !email.
 
 def hero < div class/[lg=[flex px-4] text-center]
   div class/[px-6 col lg=[w='1/2']]
@@ -123,7 +123,7 @@ def promo < div class=[rounded text-center py-2 px-6 inline-block mx-auto]
 website
 
   index < page
-    main/class=[space-y:20 centered-column]
+    main/class/[space-y:20 centered-column]
 
     hero img/src='images/word-tree.png'
       title:    Life Tools for Girls
@@ -179,6 +179,16 @@ website
     box-quote class/[my:10] by='Evi, age 12'
       : I love it here because it enables me to release my stress from school. Also it helps me to believe in myself more. I am learning to be kind to myself and the people around me.
 
+    section class=[bg-red-100 p-5 border rounded mb-4]
+      h2 class=[text-center mb-4 uppercase]: Coronavirus Update
+
+      p : Empowerment workshops for young girls aged 11-14 will start again in September, in Hampstead, London NW3, and will observe any social distancing guidelines current at that time. 
+            
+      p : Dates and venue to be confirmed. Please email me at nicola@nicolalocke.com if you would like to be kept updated, or simply sign up to the mailing list on the <a class='underline' href='contact.html'>contact page</a>. 
+  
+      p class=[mb-0] : If you have any questions you are welcome to call me on 07886 404098
+
+
     p :
       These workshops provide a safe, secure environment in which your daughter can rediscover her enjoyment of life. There are no lectures, just love and a compassionate atmosphere where she can share quality time and make friends.
 
@@ -211,7 +221,7 @@ website
 
       promo class/[bg-green-400]
 
-      img class=[max-w-sm md=[max-w-full]] src='images/spring-tree.png'
+      img class=[max-w-xs md=[max-w-full]] src='images/spring-tree.png'
 
     h1 class=[text-3xl md=[text-5xl '-mt-4'] mb:4 mt:4]: One to One Mentoring
 
@@ -221,7 +231,7 @@ website
 
     p : We may use creative tools such as journaling as a way to explore ones needs.
 
-    p : A course of 6 to 8 weeks is usually recommended. The sessions will last one hour.
+    p : A course of 6 to 8 weeks is usually recommended.
 
     p : If it is discovered that your daughter is facing more serious challenges, it may be helpful to refer her on to a more specialised therapist. 
 
@@ -232,7 +242,6 @@ website
   testimonials < page
     h1 class=[text-center text-5xl mb-2] : Testimonials
     h2 class=[text-center text-3xl mb-6] : From the Girls
-
 
     quote by='Amelia' :
       I know I shouldn't worry about things. This has taught me how to find ways for clearing my mind and destressing. I now know how to help myself.
@@ -290,13 +299,12 @@ website
       p : Nicola gives the girls a relaxed and safe environment to be themselves while giving them tools to become strong, confident and happy young women.  I would highly recommend her empowerment course for any young lady struggling with the stress of being a teenager.  
 
   about < sidebar-page face/class/[lg=[hidden]]
-    sidebar =
-      img class=[w-40 mx-auto md=[w-full] lg=[block] rounded-full hidden mb-8] src='images/nicola.jpg'
-      promo class/[bg-green-300 mb-10]
+    sidebar/
+      img class=[w:1/5 mx-auto rounded-full hidden mb-8 md=[w:4/5] lg=[block]] src='images/nicola.jpg'
 
     h1 class=[text-center text-4xl md=[text-left text-5xl]]: About Nicola
 
-    row class/[text-xl mb-8 text-center md=[space-x-6 text-2xl text-left]]
+    row class/[text-xl mb-8 text-center md=[text-2xl text-left]]
       mailto email='nicola@nicolalocke.com'
       div : 07886 266373
 
