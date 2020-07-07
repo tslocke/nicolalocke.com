@@ -22,7 +22,7 @@ def page
             a class=[px-2 pt-2] href='testimonials.html' : Testimonials
             a class=[px-2 pt-2] href='about.html'        : About
             a class=[px-2 pt-2] href='contact.html'      : Contact
-        !main class=[flex-1]
+        !main class=[flex-grow]
           !content.
         !footer class=[mt-auto]
           div class=[row justify-around my-20 border-t pt-10 flex-wrap]
@@ -227,9 +227,7 @@ website
 
     p : Structured one to one sessions are helpful for girls who need more individual attention, giving them the space and time to talk through their thoughts and feelings in a safe and supportive environment.
 
-    p : During this time it is important that we establish trust. We will work on your childs individual issues. These will be self guided.
-
-    p : We may use creative tools such as journaling as a way to explore ones needs.
+    p : During this time it is important that we establish trust. We will work on your child's individual issues. These will be self guided.
 
     p : A course of 6 to 8 weeks is usually recommended.
 
@@ -244,7 +242,7 @@ website
     h2 class=[text-center text-3xl mb-6] : From the Girls
 
     quote by='Amelia' :
-      I know I shouldn't worry about things. This has taught me how to find ways for clearing my mind and destressing. I now know how to help myself.
+      I know I shouldn't worry about things. This has taught me how to find ways for clearing my mind and de-stressing. I now know how to help myself.
     
     quote by='Evie' :
       It's a great place to come every week. It boosts your confidence. Nicola tells you ways to help with anxiety and stress. There are loads of creative things you get to do.Going on this course will help you deal with the hard things of being a pre-teen or teenage girl.
