@@ -14,7 +14,7 @@ def page
             !face < img class=[w-20 rounded-full mr-4 mt-1] src='images/nicola.jpg'
             div class=[text-left pb-2]
               h1 class=[text:4xl] : Nicola Locke
-              h2 class=[text-gray-600 text-lg mt='-mt-2'] 'Mentor / Facilitator'
+              h2 class=[text-gray-600 text-lg '-mt-2'] 'Mentor / Facilitator'
               h2 class=[text-gray-500 font-normal text-sm uppercase] 'Hampstead, London'
           div class=[flex items-center text-xl lg=[ml-auto] whitespace-no-wrap flex-wrap justify-center px-14] 
             a class=[px-2 pt-2] href='workshops.html'    : Workshops
@@ -224,7 +224,7 @@ website
 
       img class=[max-w-xs md=[max-w-full]] src='images/spring-tree.png'
 
-    h1 class=[text-3xl md=[text-5xl mt='-mt-4'] mb:4 mt:4]: One to One Mentoring
+    h1 class=[text-3xl md=[text-5xl '-mt-4'] mb:4 mt:4]: One to One Mentoring
 
     p : Structured one to one sessions are helpful for girls who need more individual attention, giving them the space and time to talk through their thoughts and feelings in a safe and supportive environment.
 
@@ -236,7 +236,7 @@ website
 
     p : Please contact me to set up an free initial consultation to assess your child’s needs at nicola@nicolalocke.com or telephone 07886 404098. 
 
-    p : £70.00 per session. Payment by cash or bank transfer. 
+    p : £55.00 per session. Payment by cash or bank transfer. 
 
   testimonials < page
     h1 class=[text-center text-5xl mb-2] : Testimonials
@@ -315,7 +315,7 @@ website
     p : I work with clients on a one to one basis or in small groups. I will happily adjust myself to the needs of my client. Please feel free to contact me with any concerns or questions.
 
     ul
-      li : Qualified in Cognitive Behavioural Therapy (CBT)
+      li : Diploma in Cognitive Behavioural Therapy (CBT)
       li : Certified Rock and Water trainer
       li : Training in therapeutic communication with children
       li : Head pastoral manager in an international boarding school for two years
