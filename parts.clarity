@@ -14,7 +14,7 @@ def page
             !face < img class=[w-20 rounded-full mr-4 mt-1] src='images/nicola.jpg'
             div class=[text-left pb-2]
               h1 class=[text:4xl] : Nicola Locke
-              h2 class=[text-gray-600 text-lg '-mt-2'] 'Mentor / Facilitator'
+              h2 class=[text-gray-600 text-lg mt='-mt-2'] 'Mentor / Facilitator'
               h2 class=[text-gray-500 font-normal text-sm uppercase] 'Hampstead, London'
           div class=[flex items-center text-xl lg=[ml-auto] whitespace-no-wrap flex-wrap justify-center px-14] 
             a class=[px-2 pt-2] href='workshops.html'    : Workshops
@@ -44,6 +44,8 @@ def column < div class/[flex:1]
 def youtube < div
   iframe allowfullscreen="" !style='width: 100%; height: 100%;' src="https://www.youtube.com/embed/8aFD7E8_VhQ?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
   !caption < div class=[text-lg text-gray-600 text-center my-4] content=?
+
+def xyoutube < div
 
 def box-quote < div class=[max-w-xl p-4 text-center border-blue-400 mx-auto bg-gray-200 border-l-4]
   div class=[italic text-lg space-y-4] !content.
@@ -127,7 +129,7 @@ website
     hero img/src='images/word-tree.png'
       title/'Life Tools for Girls'
 
-      section class/[text-gray-700 text:lg]
+      section class/[text-gray:700 text:lg]
         p : Group workshops and one-to-one mentoring with a focus on creativity and fun, giving girls the tools they need to stay true to themselves, and the strength to use them.
 
       box-quote by/'Katy Biggs (Mum)'
@@ -222,7 +224,7 @@ website
 
       img class=[max-w-xs md=[max-w-full]] src='images/spring-tree.png'
 
-    h1 class=[text-3xl md=[text-5xl '-mt-4'] mb:4 mt:4]: One to One Mentoring
+    h1 class=[text-3xl md=[text-5xl mt='-mt-4'] mb:4 mt:4]: One to One Mentoring
 
     p : Structured one to one sessions are helpful for girls who need more individual attention, giving them the space and time to talk through their thoughts and feelings in a safe and supportive environment.
 
