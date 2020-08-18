@@ -180,12 +180,18 @@ website
     box-quote class/[my:10] by/'Evi, age 12'
       : I love it here because it enables me to release my stress from school. Also it helps me to believe in myself more. I am learning to be kind to myself and the people around me.
 
-    section class=[bg-red-100 p-5 border rounded mb-4]
-      h2 class=[text-center mb-4 uppercase]: Coronavirus Update
+    section class=[bg-red-200 p-5 rounded mb-4 border border-red-400]
+      h2 class=[text-center mb-4 uppercase]: Workshops Starting Soon
+      h2 class=[text-center mb-4 text-lg font-normal]
+        a class=[border px-2 rounded border-red-600 py-1 bg-red-300] href='contact.html' : Join the Mailing List
+        p class=[text-base pt-2 text-red-400] : to be kept updated
 
-      p : Empowerment workshops for young girls aged 11-14 will start again in September, in Hampstead, London NW3, and will observe any social distancing guidelines current at that time. 
+      p : Empowerment workshops for young girls aged 11-14 will be starting soon in Hampstead, London NW3, and will observe any social distancing guidelines current at that time. 
             
-      p : Dates and venue to be confirmed. Please email me at nicola@nicolalocke.com if you would like to be kept updated, or simply sign up to the mailing list on the <a class='underline' href='contact.html'>contact page</a>. 
+      p 
+        : Dates and venue to be confirmed. You are welcome to email me at 
+        mailto email='nicola@nicolalocke.com' 
+        : to learn more, or please <a class='underline' href='contact.html'>sign up to the mailing list</a>.
   
       p class=[mb-0] : If you have any questions you are welcome to call me on 07886 404098
 
