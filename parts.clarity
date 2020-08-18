@@ -183,8 +183,7 @@ website
     section class=[bg-red-200 p-5 rounded mb-4 border border-red-400]
       h2 class=[text-center mb-4 uppercase]: Workshops Starting Soon
       h2 class=[text-center mb-4 text-lg font-normal]
-        a class=[border px-2 rounded border-red-600 py-1 bg-red-300] href='contact.html' : Join the Mailing List
-        p class=[text-base pt-2 text-red-400] : to be kept updated
+        a class=[border px-2 rounded border-red-600 py-1 bg-red-300 mb] href='contact.html' : Join the Mailing List
 
       p : Empowerment workshops for young girls aged 11-14 will be starting soon in Hampstead, London NW3, and will observe any social distancing guidelines current at that time. 
             
