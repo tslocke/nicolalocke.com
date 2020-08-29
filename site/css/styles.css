@@ -17921,6 +17921,11 @@ li {
   margin-bottom: 0.25rem;
 }
 
+.link {
+  text-decoration: underline;
+  color: blue;
+}
+
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;

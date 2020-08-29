@@ -38,3 +38,8 @@ ul {
 li {
   @apply mb-1;
 }
+
+.link {
+  text-decoration: underline;
+  color: blue;
+}

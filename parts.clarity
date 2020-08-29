@@ -259,40 +259,29 @@ website
           div : Holly Lodge Community Centre
           div : 30 Makepeace Avenue ~ Highgate N6 6HL
 
-        div class=[text-center text-lg mb-6]: 8 weekly sessions of 2 hours. £30.00 per session / £240 total.
+        div class=[text-center text-lg font-bold]: £240 for 8 weekly sessions of 2 hours.
+        div class=[text-center mb-6 text-gray-700]: (£30.00 per session)
 
-        div class=[md=[flex divide-x] mb-8]
-          div class=[w='1/2' text-center]
+        div class=[md=[flex divide-x]]
+          div class=[w='1/2' text-center py-4]
             h2 class=[mb-2] : Tuesdays After School
             div class=[text-gray-800] : 13th Oct — 8th Dec
             div class=[text-gray-800] : (except half term, 27th Oct)
             div class=[text-gray-800 font-bold mt-2] : 4:30pm—6:30pm
 
             payment-button : Book now ~ £240
-            payment-button : Book now ~ £50 deposit
-            div class=[text-gray-800 '-mt-4' text-sm] : Followed by £50 each week, cash only
 
-
-          div class=[w='1/2' text-center]
+          div class=[w='1/2' text-center py-4]
             h2 class=[mb-2] : Saturday Afternoons
             div class=[text-gray-800] : 31st Oct — 19th Dec
             div : &nbsp;
             div class=[text-gray-800 font-bold mt-2] : 1:30pm—3:30pm
 
             payment-button : Book now ~ £240
-            payment-button : Book now ~ £50 deposit
-            div class=[text-gray-800 '-mt-4' text-sm] : Followed by £50 each week, cash only
 
-        p : The space will be set up and follow all COVID requirements. In the case that increased lockdown measures from the government lead to cancellation of the workshops, all payments will be fully refunded.
+        div class=[text-center text-gray-700 mt-4 mb-8 text-sm] : If you would like to arrange for weekly payment, please <a class='link' href='contact.html'>get in touch</a>
 
-              
-        p 
-          : Dates and venue to be confirmed. You are welcome to email me at 
-          mailto email='nicola@nicolalocke.com' 
-          : to learn more, or please <a class='underline' href='contact.html'>sign up to the mailing list</a>.
-    
-        p class=[mb-0] : If you have any questions you can call me on 07886 404098
-
+      p : The space will be set up and follow all COVID requirements. In the case that increased lockdown measures from the government lead to cancellation of the workshops, all payments will be fully refunded.
 
       p :
         These workshops provide a safe, secure environment in which your daughter can rediscover her enjoyment of life. There are no lectures, just love and a compassionate atmosphere where she can share quality time and make friends.
@@ -350,7 +339,7 @@ website
       I know I shouldn't worry about things. This has taught me how to find ways for clearing my mind and de-stressing. I now know how to help myself.
     
     quote by/'Evie' :
-      It's a great place to come every week. It boosts your confidence. Nicola tells you ways to help with anxiety and stress. There are loads of creative things you get to do.Going on this course will help you deal with the hard things of being a pre-teen or teenage girl.
+      It's a great place to come every week. It boosts your confidence. Nicola tells you ways to help with anxiety and stress. There are loads of creative things you get to do. Going on this course will help you deal with the hard things of being a pre-teen or teenage girl.
 
     quote by/'Anon' :
       I get a sense of community going to these workshops and a feeling that I am not alone. I really enjoy the creative aspect of it all.
