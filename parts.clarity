@@ -212,77 +212,6 @@ website
     box-quote class/[my:10] by/'Evi, age 12'
       : I love it here because it enables me to release my stress from school. Also it helps me to believe in myself more. I am learning to be kind to myself and the people around me.
 
-    section class=[bg-red-200 p-5 rounded mb-4 border border-red-400]
-      h2 class=[text-center mb-4 uppercase]: Workshops Starting Soon
-      h2 class=[text-center mb-4 text-lg font-normal]
-        a class=[border px-2 rounded border-red-600 py-1 bg-red-300 mb] href='contact.html' : Join the Mailing List
-
-      p : Empowerment workshops for young girls aged 11-14 will be starting soon in Hampstead, London NW3, and will observe any social distancing guidelines current at that time. 
-            
-      p 
-        : Dates and venue to be confirmed. You are welcome to email me at 
-        mailto email='nicola@nicolalocke.com' 
-        : to learn more, or please <a class='underline' href='contact.html'>sign up to the mailing list</a>.
-  
-      p class=[mb-0] : If you have any questions you can call me on 07886 404098
-
-
-    p :
-      These workshops provide a safe, secure environment in which your daughter can rediscover her enjoyment of life. There are no lectures, just love and a compassionate atmosphere where she can share quality time and make friends.
-
-    p :
-      In today’s society girls are increasingly anxious and critical about themselves and their friends. Many are feeling hopeless, lonely, insecure or afraid to speak out in case of being ridiculed or judged. During these sessions we embark on a journey of self-discovery and positive empowerment. The girls share experiences that tie them together and show them they’re not alone. They will develop a set of tools to carry with them throughout life.
-
-    p :
-      Over the eight weeks we cover:
-
-    ul
-      li : Being kind to me.
-      li : What makes a good friend?
-      li : Why being yourself is important.
-      li : Meaningful self-evaluation criteria; healthy ways to evaluate one’s self worth.
-      li : The power of having positive thoughts, how to reverse negative self-talk.
-      li : Understanding and coping with stress and anxiety.
-      li : Using breathing exercises and meditation to stay calm.
-      li : Empathy and kindness.
-      li : Facing fears. Positive affirmations.
-      li : Strengthening relationships at home, listening to the ones we love.
-      li : Gratitude and why it matters.
-      li : Having a fixed or growth mindset.
-      li : Having healthy relationships.
-      li : Making goals and sticking to them.
-      li : Navigating social media and keeping safe online.
-
-  workshops-new < sidebar-page columns/class/[flex-col-reverse]
-    sidebar/
-      class/[space-y:6]
-      img class=[max-w-xs md=[max-w-full mt-0] mx-auto mt-10] src='images/summer-tree.png'
-
-      h2 class=[text-center] : From the Parents
-
-      section class/[text:sm]
-        p : I can’t tell you how much my daughter has enjoyed Nicola’s workshops.
-
-        p : She is a very shy child that finds social situations very difficult, so when I say that she didn’t miss one session and she was ready every Saturday waiting to go, it tells me a lot, it says she enjoyed being there and over the weeks she has learnt so much about herself. Nicola made her feel at ease and able to join in.
-
-        p : I think this is a wonderful thing that Nicola is offering and would recommend it to anyone.
-
-        p : – Louise Reddington
-
-      section class/[text:sm]
-        p : My daughter was suffering from low self-esteem and was finding teenage friends difficult. This course really helped her. She learned how to think more positively, she made some new friends and she looked forward to it every week.
-      
-        p : It’s not that easy to get a teenager out of bed on a Saturday morning but this course really motivated her. She especially loved making her journal, her den and her mood board.
-
-        p : Maddy says “Nicola is easy to talk to and really cares”.
-
-        p : – Jane Harman
-
-    h1 class=[text:4xl md=[text:5xl]]: Group Workshops
-
-    box-quote class/[my:10] by/'Evi, age 12'
-      : I love it here because it enables me to release my stress from school. Also it helps me to believe in myself more. I am learning to be kind to myself and the people around me.
-
     section class=[mb-4]
       h2 class=[text-center mb-2 uppercase text-2xl]: New Workshops ~ Enroll Now
       div class=[text-center text-gray-700 mb-4]
@@ -313,7 +242,7 @@ website
 
       div class=[text-center text-gray-700 mt-4 mb-8 text-sm] : If you would like to arrange for weekly payment, please <a class='link' href='contact.html'>get in touch</a>
 
-    p : The space will be set up and follow all COVID requirements. In the case that increased lockdown measures from the government lead to cancellation of the workshops, all payments will be fully refunded.
+    p : The space will be well ventilated and there will be sufficient space for social distancing. Face coverings will not be required. In the case that increased lockdown measures from the government lead to cancellation of the workshops, all payments will be fully refunded.
 
     p :
       These workshops provide a safe, secure environment in which your daughter can rediscover her enjoyment of life. There are no lectures, just love and a compassionate atmosphere where she can share quality time and make friends.
