@@ -222,7 +222,7 @@ website
       div class=[text-center mb-6 text-gray-700]: (£30.00 per session)
 
       div class=[md=[flex divide-x]]
-        div class=[w='1/2' text-center py-4]
+        div class=[md=[w='1/2'] text-center py-4]
           h2 class=[mb-2] : Tuesdays After School
           div class=[text-gray-800]
           div : 13th Oct — 8th Dec
@@ -232,18 +232,20 @@ website
           div class=[font-bold mt-2 mb-4] : 4:30pm—6:30pm
 
           div class=[powr-stripe-button h-8] id="3bdb1bb2_1598693467"
-          script src="https://www.powr.io/powr.js?platform=html"
+          div class=[h-4]
+            script src="https://www.powr.io/powr.js?platform=html"
 
-        div class=[w='1/2' text-center py-4]
+        div class=[md=[w='1/2'] text-center pb-4 pt-10 md=[pt-4]]
           h2 class=[mb-2] : Saturday Afternoons
           div class=[text-gray-800] : 31st Oct — 19th Dec
-          div class=[h-20]
+          div class=[md=[h-20]]
           div class=[text-gray-800 font-bold mt-2 mb-4] : 1:30pm—3:30pm
 
           div class=[powr-stripe-button h-8] id="74026ac8_1598696380"
-          script src="https://www.powr.io/powr.js?platform=html"
+          div class=[h-4]
+            script src="https://www.powr.io/powr.js?platform=html"
 
-      div class=[text-center text-gray-700 mt-4 mb-8 text-sm] : If you would like to arrange for weekly payment, please <a class='link' href='contact.html'>get in touch</a>
+      div class=[text-center text-gray-700 mt-8 mb-8 text-sm] : If you would like to arrange for weekly payment please <a class='link' href='contact.html'>get in touch</a>
 
     p : The space will be well ventilated and there will be sufficient space for social distancing. Face coverings will not be required. In the case that increased lockdown measures from the government lead to cancellation of the workshops, all payments will be fully refunded.
 
