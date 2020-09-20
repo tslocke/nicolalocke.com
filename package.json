@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "tailwindcss": "^1.4.6"
+    "tailwindcss": "^1.8"
   },
   "scripts": {
     "build:tailwind": "tailwindcss build styles.css -o site/css/styles.css",

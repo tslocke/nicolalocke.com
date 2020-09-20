@@ -3,8 +3,16 @@ module.exports = {
     './site/**/*.html',
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        
+      }
+    },
   },
   variants: {},
   plugins: [],
+  furture: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true
+  }
 }

@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway:wght@400;700&display=swap">
     <title>Nicola Locke ~ Mentor / Facilitator </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/lightgallery.min.css">
+    <script src="/js/lightgallery.min.js"></script>
   </head>
   <body class="raleway col max-w-6xl mx-auto">
     <div class="px-5 md:px-10 col flex-grow" style="min-height: 100vh">
@@ -54,9 +56,41 @@
           </div>
           <div class="flex-1 md:flex-2 md:w-2/3">
             <h1 class="text-4xl md:text-5xl">Group Workshops</h1>
+            <div class="space-y-1" id="lightgallery">
+              <div class="flex">
+                <div class="photo relative w-1/2" data-src="images/workshops/large/girl-with-nicola.jpg" data-size="1920x1080">
+                  <img class="pr-1 absolute h-full w-full object-cover" src="images/workshops/thumbs/girl-with-nicola.jpg">
+                </div>
+                <div class="w-1/4 relative">
+                  <div class="photo block" style="padding-bottom: 100%" data-src="images/workshops/large/craft-table.jpg" data-size="1508x1500">
+                    <img class="pr-1 absolute h-full w-full object-cover" src="images/workshops/thumbs/craft-table.jpg">
+                  </div>
+                </div>
+                <div class="w-1/4 relative">
+                  <div class="photo block" style="padding-bottom: 100%" data-src="images/workshops/large/on-floor-square.jpg" data-size="1500x1506">
+                    <img class="absolute h-full w-full object-cover" src="images/workshops/thumbs/on-floor-square.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="w-1/4 relative">
+                  <div class="photo block" style="padding-bottom: 100%" data-src="images/workshops/large/happiness-box.jpg" data-size="1500x1500">
+                    <img class="pr-1 absolute h-full w-full object-cover" src="images/workshops/thumbs/happiness-box.jpg">
+                  </div>
+                </div>
+                <div class="w-1/4 relative">
+                  <div class="photo block" style="padding-bottom: 100%" data-src="images/workshops/large/girl-standing.jpg" data-size="1078x1078">
+                    <img class="pr-1 absolute h-full w-full object-cover" src="images/workshops/thumbs/girl-standing.jpg">
+                  </div>
+                </div>
+                <div class="photo relative w-1/2" data-src="images/workshops/large/three-girls.jpg" data-size="1559x1078">
+                  <img class="absolute h-full w-full object-cover object-middle" src="images/workshops/thumbs/three-girls.jpg">
+                </div>
+              </div>
+            </div>
             <div class="max-w-xl p-4 text-center border-blue-400 mx-auto bg-gray-200 border-l-4 my-10">
               <div class="italic text-lg space-y-4">
-                I love it here because it enables me to release my stress from school. Also it helps me to believe in myself more. I am learning to be kind to myself and the people around me.
+                I love it here because it helps me to release my stress from school and to believe in myself more. I am learning to be kind to myself and the people around me.
               </div>
               <div class="mt-4 font-bold">Evi, age 12</div>
               <div></div>
@@ -93,7 +127,7 @@
                   <div class="text-gray-800 font-bold mt-2 mb-4">1:30pm—3:30pm</div>
                   <div class="powr-stripe-button h-8" id="74026ac8_1598696380"></div>
                   <div class="h-4">
-                    <script src="https://www.powr.io/powr.js?platform=html"></script>
+                    <script data-src-disabled="https://www.powr.io/powr.js?platform=html"></script>
                   </div>
                 </div>
               </div>
@@ -136,6 +170,10 @@
               <li>Making goals and sticking to them.</li>
               <li>Navigating social media and keeping safe online.</li>
             </ul>
+            <script>
+              lightGallery(document.querySelector('#lightgallery'), {selector: '*[data-src]', counter: false, download: false});
+
+            </script>
           </div>
         </div>
       </main>
