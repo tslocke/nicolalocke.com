@@ -72,7 +72,7 @@ def columns < div class=[row]
 def column < div class/[flex:1]
 
 def youtube < div
-  iframe allowfullscreen="" !style='width: 100%; height: 100%;' src="https://www.youtube.com/embed/8aFD7E8_VhQ?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
+  iframe allowfullscreen="" !style='width: 100%; height: 100%;' src="https://www.youtube.com/embed/tez33t1WhCA?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
   !caption < div class=[text-lg text-gray-600 text-center my-4] content=?
 
 def xyoutube < div
@@ -249,11 +249,11 @@ website
 
       div class=[md=[flex divide-x]]
         div class=[md=[w='1/2' mx-auto] text-center py-4]
-          h2 class=[mb-2] : Tuesdays After School
+          h2 class=[mb-2] : Thursdays After School
           div class=[text-gray-800]
-          div : 13th Oct — 8th Dec
+          div : 14th Jan - 11th March
           div class=[h-20]
-            div class=[text-sm] : except half term, 27th Oct
+            div class=[text-sm] : except half term, 18th Feb
             div class=[px:12 pt:1 text-gray-700 text-sm] : If you have a two week half-term please <a class='underline text-blue-700' href='contact.html'>get in touch</a>
           div class=[font-bold mt-2 mb-4] : 4:30pm—6:30pm
 
