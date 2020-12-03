@@ -245,7 +245,8 @@ website
         div : 30 Makepeace Avenue ~ Highgate N6 6HL
 
       div class=[text-center text-lg font-bold]: £240 for 8 weekly sessions of 2 hours.
-      div class=[text-center mb-6 text-gray-700]: (£30.00 per session)
+      div class=[text-center text-gray-700]: (£30.00 per session)
+      div class=[text-center mb-6 text-gray-700]: Snacks &amp; art materials included
 
       div class=[md=[flex divide-x]]
         div class=[md=[w='1/2' mx-auto] text-center py-4]
