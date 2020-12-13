@@ -165,8 +165,8 @@ website
         p : Group workshops and one-to-one mentoring with a focus on creativity and fun, giving girls the tools they need to stay true to themselves, and the strength to use them.
 
       a class=[flex items-center flex-col lg=[flex-row justify-center]] href='https://www.amazon.co.uk/My-Life-Happiness-self-care-journal/dp/B08PJK75QT'
-        img class=[h-56 mb-6] src='images/book.png'
-        div class=[ bottom-0 right-0 rounded w-48 border border-green-600 text-center bg-white py-1]
+        img class=[h-56 m-3 shadow-lg] src='images/book.png'
+        div class=[rounded w-48 border border-green-600 text-center bg-white py-1]
           div class=[text-xl font-bold] : Book Out Now!
           div class=[text-xs '-mt-1']: Buy on Amazon
 
