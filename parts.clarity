@@ -135,7 +135,7 @@ def mailchimp-signup :
 def mailto < a href=['mailto:' !email.] !email.
 
 def hero < div class/[lg=[flex px-4] text-center]
-  div class/[px-6 col lg=[w='1/2']]
+  div class/[px-6 col lg=[w='1/2'] relative]
     !img class=[max-w-sm mx-auto w-full]
     
   div class/[col justify-between text-center lg=[px:4 w='1/2' space-y:4] space-y:8 max-w-lg]
@@ -164,10 +164,17 @@ website
       section class/[text-gray:700 text:lg]
         p : Group workshops and one-to-one mentoring with a focus on creativity and fun, giving girls the tools they need to stay true to themselves, and the strength to use them.
 
-      box-quote by/'Katy Biggs (Mum)'
-        extra/
-          a class=[block text-sm text-blue-500 mt-2] href='testimonials.html' : Read more testimonials
-        : I cannot recommend this lady enough. How she has helped Mollie is amazing!! Nicola has given Mollie so many tools to help in the future when things get tough. Couldn’t ask for more!
+      a class=[flex items-center flex-col lg=[flex-row justify-center]] href='https://www.amazon.co.uk/My-Life-Happiness-self-care-journal/dp/B08PJK75QT'
+        img class=[h-56 mb-6] src='images/book.png'
+        div class=[ bottom-0 right-0 rounded w-48 border border-green-600 text-center bg-white py-1]
+          div class=[text-xl font-bold] : Book Out Now!
+          div class=[text-xs '-mt-1']: Buy on Amazon
+
+
+    box-quote by/'Katy Biggs (Mum)'
+      extra/
+        a class=[block text-sm text-blue-500 mt-2] href='testimonials.html' : Read more testimonials
+      : I cannot recommend this lady enough. How she has helped Mollie is amazing!! Nicola has given Mollie so many tools to help in the future when things get tough. Couldn’t ask for more!
 
     promo class/[bg-red-200]
 
