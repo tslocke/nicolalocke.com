@@ -241,6 +241,10 @@ website
           img class=[absolute h-full w-full object-cover object-middle] src='images/workshops/thumbs/three-girls.jpg'
 
 
+    div class=[mx-auto max-w-lg bg-yellow-400 rounded-lg text-center mt-8 py-2]
+      div class=[font-bold font-lg] : Due to the COVID situation<br/>all workshops are currently cancelled
+      div : New workshops will be announced as restrictions are lifted
+
     box-quote class/[my:10] by/'Evi, age 12'
       : I love it here because it helps me to release my stress from school and to believe in myself more. I am learning to be kind to myself and the people around me.
 
