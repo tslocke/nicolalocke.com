@@ -181,12 +181,12 @@ website
 
     div class/[lg=[flex] max-w-3xl mx-auto lg=[space-x-20 space-y-0] space-y-20]
       card img/src='images/summer-tree.png' img/class/[max-w-xs] heading/'Workshops' href='workshops.html'
-        : For girls aged 11 to 14, these could be just what she needs to rebuild her self-confidence while learning some simple but powerful, coping tools.
         button/'Learn More'
+        : For girls aged 11 to 14, these could be just what she needs to rebuild her self-confidence while learning some simple but powerful, coping tools.
 
       card img/src='images/spring-tree.png' img/class/[max-w-xs] heading/'One to One' href='one-to-one.html'
-        : Working with girls 10 yrs and up. These sessions are more flexible and provide a safe and secure space to talk and share their personal difficulties.
         button/'Learn More'
+        : Working with girls 10 yrs and up. These sessions are more flexible and provide a safe and secure space to talk and share their personal difficulties.
 
   workshops < sidebar-page columns/class/[flex-col-reverse]
     head-extras/
@@ -336,7 +336,7 @@ website
 
     p : Please contact me to set up an free initial consultation to assess your child’s needs at nicola@nicolalocke.com or telephone 07886 404098. 
 
-    p : £55.00 per session. Payment by cash or bank transfer. 
+    p : £35.00 per session. Payment by cash or bank transfer. 
 
   testimonials < page
     h1 class=[text-center text-5xl mb-2] : Testimonials
