@@ -240,37 +240,30 @@ website
         div class=[photo 'w-1/2' relative] data-src='images/workshops/large/three-girls.jpg'
           img class=[absolute h-full w-full object-cover object-middle] src='images/workshops/thumbs/three-girls.jpg'
 
-
-    div class=[mx-auto max-w-lg bg-yellow-400 rounded-lg text-center mt-8 py-2]
-      div class=[font-bold font-lg] : Due to the COVID situation<br/>all workshops are currently cancelled
-      div : New workshops will be announced as restrictions are lifted
-
     box-quote class/[my:10] by/'Evi, age 12'
       : I love it here because it helps me to release my stress from school and to believe in myself more. I am learning to be kind to myself and the people around me.
 
-    section class=[mb-4 hidden]
-      h2 class=[text-center mb-2 uppercase text-2xl]: New Workshops ~ Enroll Now
+    section class=[mb-4]
+      h2 class=[text-center mb-2 text-2xl]: Saturday Empowerment Workshops <br/> <span class='uppercase'>Enroll Now</span>
       div class=[text-center text-gray-700 mb-4]
-        div : Holly Lodge Community Centre
-        div : 30 Makepeace Avenue ~ Highgate N6 6HL
+        div : Central Leamington Spa Location
 
-      div class=[text-center text-lg font-bold]: £240 for 8 weekly sessions of 2 hours.
-      div class=[text-center text-gray-700]: (£30.00 per session)
-      div class=[text-center mb-6 text-gray-700]: Snacks &amp; art materials included
+      div class=[text-center text-lg font-bold]: £180 for 8 weekly sessions of 2 hours.
+      div class=[text-center mb-6 text-gray-700]: Includes all drinks, snacks and treats, a hardback journal, <br/> all photocopies, plus a generous range of creative art materials
 
       div class=[md=[flex divide-x]]
         div class=[md=[w='1/2' mx-auto] text-center py-4]
-          h2 class=[mb-2] : Thursdays After School
-          div class=[text-gray-800]
-          div : 14th Jan - 11th March
-          div class=[h-20]
-            div class=[text-sm] : except half term, 18th Feb
-            div class=[px:12 pt:1 text-gray-700 text-sm] : If you have a two week half-term please <a class='underline text-blue-700' href='contact.html'>get in touch</a>
-          div class=[font-bold mt-2 mb-4] : 4:30pm—6:30pm
+          h2 class=[mb-2] : How it Works
+          p : Please email me with your preferred day
 
-          div class=[powr-stripe-button h-8] id="3bdb1bb2_1598693467"
-          div class=[h-4]
-            script src="https://www.powr.io/powr.js?platform=html"
+          p : Sat 10 am — 12 noon <br/>Age 11-12yrs
+          p : Sat 2 pm — 4pm <br/>Age 12-13 yrs
+          p class=[text-sm] : When I have enough girls in a group I will contact you with a start date option.
+
+          div class=[hidden]
+            div class=[powr-stripe-button h-8] id="3bdb1bb2_1598693467"
+            div class=[h-4]
+              script src="https://www.powr.io/powr.js?platform=html"
 
         div class=[hidden md=[w='1/2'] text-center pb-4 pt-10 md=[pt-4]]
           h2 class=[mb-2] : Saturday Afternoons
@@ -282,12 +275,11 @@ website
           div class=[h-4]
             script data-src-disabled="https://www.powr.io/powr.js?platform=html"
 
-      div class=[text-center text-gray-700 mt-8 mb-8 text-sm] : If you would like to arrange for weekly payment please <a class='link' href='contact.html'>get in touch</a>
+      div class=[hidden text-center text-gray-700 mt-8 mb-8 text-sm] : If you would like to arrange for weekly payment please <a class='link' href='contact.html'>get in touch</a>
 
-    p : The space will be well ventilated and there will be sufficient space for social distancing. Face coverings will not be required. In the case that increased lockdown measures from the government lead to cancellation of the workshops, all payments will be fully refunded.
 
     p :
-      These workshops provide a safe, secure environment in which your daughter can rediscover her enjoyment of life. There are no lectures, just love and a compassionate atmosphere where she can share quality time and make friends.
+      If you feel your daughter is suffering from a lack of confidence, peer group pressure, anxiety She might need a boost of general self-care and kindness in a group of like-minded others. These workshops could be just what she needs.
 
     p :
       In today’s society girls are increasingly anxious and critical about themselves and their friends. Many are feeling hopeless, lonely, insecure or afraid to speak out in case of being ridiculed or judged. During these sessions we embark on a journey of self-discovery and positive empowerment. The girls share experiences that tie them together and show them they’re not alone. They will develop a set of tools to carry with them throughout life.
@@ -325,6 +317,10 @@ website
       img class=[max-w-xs md=[max-w-full]] src='images/spring-tree.png'
 
     h1 class=[text-3xl md=[text-5xl '-mt-4'] mb:4 mt:4]: One to One Mentoring
+    
+    box-quote class/[mb:10] by/'Rosie'
+      : I can’t put into words how much you helped my daughter through a hard time, the tools you gave her to deal with her feelings and situations at school have been invaluable. We are both so grateful.
+      
 
     p : Structured one to one sessions are helpful for girls who need more individual attention, giving them the space and time to talk through their thoughts and feelings in a safe and supportive environment.
 
@@ -371,6 +367,12 @@ website
 
     h2 class=[text-center text-3xl mb-6 mt-12]: From the Parents
 
+    quote by/'Alison Tran'
+      p : Starting secondary school can be a confusing and difficult time for girls. Nicola’s workshop was really helpful and well timed for my 11 year old daughter. Nicola was able to create a safe, relaxed and enjoyable space for the girls to be creative, and at the same time talk about any anxieties they had about starting their new school. My daughter really loved creating her own journal, and at the same time sharing her experiences. Nicola had a really good understanding of the issues young girls face, and was able to teach the girls some very helpful tools they can use in their day to day life. She was supportive and encouraging, and my daughter loved going to Nicola’s sessions.
+
+    quote by/'Farida Vidal'
+      p : Thank you for helping my daughter to express herself through art and craft, giving her the opportunity to talk in a safe environment. It helped her a lot, specially after COVID, to find the fun that she couldn’t find at school anymore. She enjoyed using all the uplifting creative material, while making a very good friend. It was a very positive experience. It helped her assess her strength and weaknesses. She now keeps her vision board on her desk to encourage her in her daily life. Thank you for all your help!
+
     quote by/'Gemma Edwards' class/[space-y-2]
       p : I wanted to thank you for the wonderful Empowerment Course Amelia attended. Before she started, Amelia was transitioning into secondary school and her anxiety levels had reached such a pitch, I didn’t quite know what to do with her. Then I saw your courses advertised and from the description, I thought it must be worth giving it a go.
       
@@ -410,7 +412,15 @@ website
     box-quote class/[my-10] by/'Maddy, age 14'
       : “You’ve given me lots of self-confidence and helped me with my friends. You have made me feel much more positive”    
 
-    p : I am a creative and inspirational youth mentor and workshop facilitator, with over thirty years experience working with children and teens. Most recently my focus has been on developing workshops for tween and teen girls as I’ve seen how they are increasingly facing problems they’re unable to solve by themselves. 
+    p : Young girls need mentors because they need someone who can help them navigate through difficult times. Someone who’ll look them in the eye, someone authentic, kind and supportive. Someone who will listen, and validate whatever it is they are going through. At a time when these young minds are trying to figure it all out, just one person from outside the family is enough for them to start believing in themselves again. Sometimes that person needs to be a trusted mentor.
+
+    p : Welcome to my website, I am a creative and inspirational youth mentor and workshop facilitator for young girls enduring peer pressure, cyberbullying and other anxieties. with over thirty years experience working with children and teens. I have focused my attention on developing workshops for young girls. In 2019 I founded self empowerment workshops to help girls navigate the uncertainties and difficulties they face. The workshops and one to one sessions I deliver lead directly to improved mental and emotional well being.( see testimonials) In 2020 I self published a book “My Life My Happiness” This book is a 16 week self care journal that aims to improve the well being of young girls.
+
+    p : I believe, “you have to put the power back into the hands of the young person, and teach them how to manage their own self care.” I am deeply concerned about the lack of support young girls are getting. With schools over run with young people in crisis, the need is demanding.Girls are slipping through the net. They are taking to social media and looking up all kinds of things that are potentially harmful. They spend time looking at images of other girls which makes them feel insecure and inadequate. With the digital world moving at a fast pace it is hard for parents and schools to keep up. Girls are becoming more and more anxious. As the peer pressure escalates and negative banter increases, it is becoming almost impossible for young girls to stand up for themselves.
+
+    p : In my work I show girls how to stand back and reflect, I teach them how to look beyond social media and peer group pressure. I educate them to think ahead and look at the bigger picture,. Most importantly I give them the tools to take back control, and believe in themselves.
+
+    p : Some girls find it hard to talk to their parents. In this modern world they often turn away from parents and put all of their trust in friends. Often these friends can miss guide them. If you see signs that your daughter is struggling don’t wait, get help for her soon. You need to prevent her from turning to her young friends or the internet to find the answers. A lot of which is distorted and not always helpful.
 
     p : I work with clients on a one to one basis or in small groups. I will happily adjust myself to the needs of my client. Please feel free to contact me with any concerns or questions.
 
